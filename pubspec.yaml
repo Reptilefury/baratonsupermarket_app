@@ -31,19 +31,19 @@ dependencies:
   cupertino_icons: ^1.0.2
   carousel_pro: ^1.0.0
   currency_text_input_formatter: ^2.0.1
-  firebase_auth: ^1.1.0
+  firebase_auth: ^1.1.1
   cloud_firestore: ^1.0.6
   google_sign_in: ^5.0.2
   shared_preferences: ^2.0.5
   fluttertoast: ^8.0.4
-  js: ^0.6.2
-  web_socket_channel: ^1.1.0
-  firebase: ^5.0.0
-  firebase_core : ^1.0.4
+  #js: ^0.6.2
+  #web_socket_channel: ^1.1.0
+  #firebase: ^5.0.0
+  #firebase_core : ^1.0.4
  # firebase_auth_web: ^1.0.6
-  firebase_auth_web: ^1.0.7
-  http_parser: ^4.0.0
-  http: ^0.11.3
+  #firebase_auth_web: ^1.0.7
+  #http_parser: ^4.0.0
+  #http: ^0.11.3
   #http ^0.11.3
 
 

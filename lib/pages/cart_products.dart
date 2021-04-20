@@ -24,7 +24,6 @@ class _Cart_productsState extends State<Cart_products> {
       "color": "Grey",
       "Quantity": 1,
     },
-
   ];
 
   @override
@@ -65,11 +64,9 @@ class Single_cart_product extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-
       child: Container(
         height: 120,
         child: ListTile(
-
           // THis is the leading section
           leading: new Image.asset(
             cart_prod_picture,
@@ -83,7 +80,7 @@ class Single_cart_product extends StatelessWidget {
           subtitle: new Column(
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                 //ROW INSIDE THE COLUMN
                 children: <Widget>[
@@ -127,9 +124,44 @@ class Single_cart_product extends StatelessWidget {
               ),
             ],
           ),
-          trailing:  new Column(
+          trailing: new Column(
             children: <Widget>[
-              Container(
+              InkWell(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Text(
+                    "+",
+                    style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w600),
+                  ),
+                ),
+/*
+                onTap: () {},
+*/
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text("$cart_prod_qty"),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                child: GestureDetector(
+                  onTap: () {},
+                  child: Text(
+                    "+",
+                    style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w600),
+                  ),
+                ),
+              ),
+
+              /* Container(
                 height:40,
                 child: Expanded(
 
@@ -138,7 +170,7 @@ class Single_cart_product extends StatelessWidget {
               Text("$cart_prod_qty"),
               Expanded(child: IconButton(icon: Icon(Icons.arrow_drop_down),
                   onPressed:(){}
-                  )),
+                  )),*/
             ],
           ),
         ),
@@ -146,4 +178,3 @@ class Single_cart_product extends StatelessWidget {
     );
   }
 }
-
