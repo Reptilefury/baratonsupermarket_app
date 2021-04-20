@@ -1,4 +1,6 @@
-import 'package:baratonsupermarket_app/pages/signup.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -6,129 +8,26 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:baratonsupermarket_app/pages/home.dart';
-import 'package:path/path.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
-class Login extends StatefulWidget {
+class Signup extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _SignupState createState() => _SignupState();
 }
 
-class _LoginState extends State<Login> {
-  final GoogleSignIn googleSignIn = new GoogleSignIn();
+class _SignupState extends State<Signup> {
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   final _formKey = GlobalKey<FormState>();
-
   TextEditingController _emailTextController = TextEditingController();
   TextEditingController _passwordTextController = TextEditingController();
-
-  SharedPreferences preferences;
+  TextEditingController _nameTextController = TextEditingController();
+  TextEditingController _confirmPasswordController = TextEditingController();
+   String gender;
   bool loading = false;
   bool isLogedin = false;
 
   @override
-  void initState() {
-    super.initState();
-    isSignedIn();
-  }
-
-  void isSignedIn() async {
-    setState(() {
-      loading = true;
-    });
-    preferences = await SharedPreferences.getInstance();
-    isLogedin = await googleSignIn.isSignedIn();
-    if (isLogedin) {
-      Navigator.pushReplacement(
-          this.context, MaterialPageRoute(builder: (context) => HomePage()));
-    }
-    setState(() {
-      loading = false;
-    });
-  }
-
-  Future handleSignedIn() async {
-    preferences = await SharedPreferences.getInstance();
-    setState(() {
-      loading = true;
-    });
-    GoogleSignInAccount googleuser = await googleSignIn.signIn();
-    GoogleSignInAuthentication googleSignInAuthentication =
-        await googleuser.authentication;
-    final AuthCredential credential = GoogleAuthProvider.credential(
-      accessToken: googleSignInAuthentication.accessToken,
-      idToken: googleSignInAuthentication.idToken,
-    );
-    final UserCredential authresult =
-        await firebaseAuth.signInWithCredential(credential);
-    final User user = authresult.user;
-
-    if (user != null) {
-      final QuerySnapshot result = await FirebaseFirestore.instance
-          .collection('users')
-          .where('id', isEqualTo: user.uid)
-          .get();
-      final List<DocumentSnapshot> documents = result.docs;
-      if (documents.length == 0) {
-        FirebaseFirestore.instance.collection('users').doc(user.uid).set({
-          "id": user.uid,
-          "username": user.displayName,
-          "profilepicture": user.photoURL,
-        });
-        await preferences.setString("id", user.uid);
-        await preferences.setString("username", user.displayName);
-        await preferences.setString("photoURL", user.displayName);
-      } else {
-        await preferences.setString("id", documents[0]['id']);
-        await preferences.setString("username", documents[0]['username']);
-        await preferences.setString("photoURL", documents[0]['photoURL']);
-      }
-      Fluttertoast.showToast(msg: "Logged in successfuly");
-      setState(() {
-        loading = false;
-      });
-      Navigator.pushReplacement(
-          this.context, MaterialPageRoute(builder: (context) => HomePage()));
-      //Navigator.push(this.context, MaterialPageRoute(builder: (context)=> HomePage()));
-    } else {
-      Fluttertoast.showToast(msg: "Login Failed");
-    }
-  }
-
-/*  Future handleSignIn() async {
-    preferences = await SharedPreferences.getInstance();
-    setState(() {
-      loading = true;
-    });
-    GoogleSignInAccount googleUser = await googleSignIn.signIn();
-    GoogleSignInAuthentication googleSignInAuthentication =
-    await googleUser.authentication;
-    FirebaseUser firebaseUser = await firebaseAuth.signInWithGoogle(
-        idToken: googleSignInAuthentication.idToken,
-        accessToken: googleSignInAuthentication.accessToken);
-    if (firebaseUser != null) {
-      final QuerySnapshot result = await FirebaseFirestore.instance.collection(
-          "users").where("id", isEqualTo: firebaseUser.uid).getDocuments();
-      final List<DocumentSnapshot> documents = result.documents;
-      if (documents.length == 0) {
-        FirebaseFirestore.instance.collection("users")
-            .document(firebaseUser.uid)
-            .setData({
-          "id" :firebaseUser.uid,
-          "username": firebaseUser.displayName,
-          "profilePicture": firebaseUser.photoUrl
-        });
-        //insert user to my collection
-      }
-    } else {
-
-    }
-  }*/
-
-  @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height /3;
+    double height = MediaQuery.of(context).size.height / 3;
     return Scaffold(
       /*appBar: AppBar(
         backgroundColor: Colors.white,
@@ -159,10 +58,8 @@ class _LoginState extends State<Login> {
 
             //TODO:: make a UEAB logo
           ),
-          GestureDetector(
-            onTap: () {
-              handleSignedIn();
-            },
+      /*    GestureDetector(
+            onTap: () {},
             child: Container(
               alignment: Alignment.bottomCenter,
               child: Image.asset(
@@ -171,12 +68,12 @@ class _LoginState extends State<Login> {
                 height: 80.0,
               ),
             ),
-          ),
-          /*   Container(
+          ),*/
+           Container(
             color: Colors.black.withOpacity(0.4),
             width: double.infinity,
             height: double.infinity,
-          ),*/
+          ),
           Center(
             child: new Container(
               height: 500,
@@ -199,7 +96,35 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.deepPurple[50],
+                        color: Colors.white,
+                        elevation: 0.0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 12.0),
+                          child: TextFormField(
+                            controller: _nameTextController,
+                            decoration: InputDecoration(
+                              hintText: "Full name",
+                              icon: Icon(
+                                Icons.person_outline,
+                                color: Colors.deepPurple[900],
+                              ),
+                              //  border: OutlineInputBorder().no,
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return "The name field cannot be empty";
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
+                      child: Material(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white,
                         elevation: 0.0,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 12.0),
@@ -232,7 +157,7 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
                       child: Material(
                         borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.deepPurple[50],
+                        color: Colors.white,
                         elevation: 0.0,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 12.0),
@@ -240,6 +165,36 @@ class _LoginState extends State<Login> {
                             controller: _passwordTextController,
                             decoration: InputDecoration(
                               hintText: "Password",
+                              icon: Icon(
+                                Icons.lock_open_outlined,
+                                color: Colors.deepPurple[900],
+                              ),
+                              //  border: OutlineInputBorder().no,
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return "The password field cannot be empty";
+                              } else if (value.length < 6) {
+                                return "the password has to be atleast 6 characters long";
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
+                      child: Material(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white,
+                        elevation: 0.0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 12.0),
+                          child: TextFormField(
+                            controller: _confirmPasswordController,
+                            decoration: InputDecoration(
+                              hintText: "Confirm password",
                               icon: Icon(
                                 Icons.lock_open_outlined,
                                 color: Colors.deepPurple[900],
@@ -269,7 +224,7 @@ class _LoginState extends State<Login> {
                             onPressed: () {},
                             minWidth: MediaQuery.of(context).size.width,
                             child: Text(
-                              "Login",
+                              "Register",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Colors.white,
@@ -278,8 +233,7 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         )),
-                    Divider(height: 30,),
-                    Padding(
+              /*      Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "Forgot password?",
@@ -289,15 +243,15 @@ class _LoginState extends State<Login> {
                             fontSize: 16,
                             fontWeight: FontWeight.bold),
                       ),
-                    ),
+                    ),*/
 
                     Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                         child: InkWell(
-                          onTap:(){Navigator.push(context, MaterialPageRoute(builder: (context)=> Signup() ));} ,
+                          onTap: () {Navigator.pop(context);},
                           child: Text(
-                            "Sign up",
-                            style: TextStyle(color: Colors.black87, fontSize: 15,fontWeight: FontWeight.bold),
+                            "Login",
+                            style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 15),
                           ),
                         )
                         /*RichText(
@@ -381,7 +335,7 @@ class _LoginState extends State<Login> {
           ),
         ],
       ),
-      bottomNavigationBar: Container(
+     /* bottomNavigationBar: Container(
         height: 60,
         child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -393,7 +347,7 @@ class _LoginState extends State<Login> {
               child: Container(
                 child: MaterialButton(
                   onPressed: () {
-                    handleSignedIn();
+                    //handleSignedIn();
                   },
                   minWidth: MediaQuery.of(context).size.width,
                   child: Text(
@@ -407,7 +361,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
             )),
-        /*child: Padding(
+        *//*child: Padding(
           padding: const EdgeInsets.only(
               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
           child: Row(
@@ -428,8 +382,8 @@ class _LoginState extends State<Login> {
               ),
             ],
           ),
-        ),*/
-      ),
+        ),*//*
+      ),*/
     );
   }
 }
