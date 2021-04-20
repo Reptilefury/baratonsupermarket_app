@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "71168873677",
+    "project_id": "baratonshop",
+    "storage_bucket": "baratonshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71168873677:android:e764fe9f7ec32d2a818584",
+        "android_client_info": {
+          "package_name": "com.example.baratonsupermarket_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71168873677-6cve1tsd5kjdngs38ake5vcqifjmbb9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.baratonsupermarket_app",
+            "certificate_hash": "9587e616f8f7a98df858daf31f830a4c4c0f3585"
+          }
+        },
+        {
+          "client_id": "71168873677-1vqu0upl9slkrd6n2nvr6j5bmjrdtqv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3X3P8A7MY-SWtw85gPFRKdVj9G1mX2Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71168873677-1vqu0upl9slkrd6n2nvr6j5bmjrdtqv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
