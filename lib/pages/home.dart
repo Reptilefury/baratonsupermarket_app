@@ -1,10 +1,12 @@
 import 'package:baratonsupermarket_app/components/products.dart';
+import 'package:baratonsupermarket_app/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:baratonsupermarket_app/pages/size_config.dart';
 import 'package:baratonsupermarket_app/pages/special_offers.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:baratonsupermarket_app/pages/cart.dart';
+
 //my own imports
 import 'package:baratonsupermarket_app/components/horizontal_listview.dart';
 
@@ -18,13 +20,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget image_carousel = new Container(
-
       height: 250.0,
-
       child: new Carousel(
-
         boxFit: BoxFit.cover,
-
         images: [
           AssetImage('images/coke2.jpeg'),
           AssetImage('images/cokee.jpeg'),
@@ -44,9 +42,7 @@ class _HomePageState extends State<HomePage> {
       ),
     );
 
-
     return Scaffold(
-
       appBar: new AppBar(
           elevation: 0.1,
           backgroundColor: Colors.deepPurple,
@@ -64,9 +60,11 @@ class _HomePageState extends State<HomePage> {
                   Icons.shopping_cart,
                   color: Colors.white,
                 ),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart()));})
-          ]
-      ),
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Cart()));
+                })
+          ]),
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
@@ -123,7 +121,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             InkWell(
-              onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context)=> new Cart()));},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Cart()));
+              },
               child: ListTile(
                 title: Text(
                   'Shopping Cart',
@@ -175,6 +176,30 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
+            Divider(),
+            InkWell(
+              onTap: () {
+                Navigator.pushReplacement(this.context,
+                    MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: ListTile(
+                title: Text(
+                  'Signout',
+                  style: TextStyle(color: Colors.black),
+                ),
+                leading: IconButton(
+                  icon: Icon(Icons.arrow_back_ios, color: Colors.deepPurple,),
+                  iconSize: 20,
+                  onPressed: () {
+                    Navigator.push(this.context,
+                        MaterialPageRoute(builder: (context) => Login()));
+                  },
+                  /*
+                  Icons.help,
+                  color: Colors.deepPurple,*/
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -188,20 +213,20 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget> [
+              children: <Widget>[
                 new Text(
                   'Categories',
                   style: TextStyle(
                       fontSize: 22.0,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1.0),
-
                 ),
                 GestureDetector(
-                  onTap: (){},
+                  onTap: () {},
                   child: Text(
                     'See All',
-                    style: TextStyle(color: Colors.deepPurple,
+                    style: TextStyle(
+                      color: Colors.deepPurple,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w600,
                       letterSpacing: 1.0,
@@ -210,7 +235,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-
           ),
 
           /* GestureDetector(
@@ -236,7 +260,7 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.symmetric(horizontal: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget> [
+              children: <Widget>[
                 Container(
                   //alignment: Alignment.centerLeft,
                   child: new Text(
@@ -249,10 +273,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){},
+                  onTap: () {},
                   child: Text(
                     'See All',
-                    style: TextStyle(color: Colors.deepPurple,
+                    style: TextStyle(
+                      color: Colors.deepPurple,
                       fontSize: 16.0,
                       fontWeight: FontWeight.w600,
                       letterSpacing: 1.0,
@@ -265,10 +290,8 @@ class _HomePageState extends State<HomePage> {
 
           //grid view
           Container(
-
             height: 950.0,
-            child: Products(
-            ),
+            child: Products(),
             //page for products includes height and page scroll
           ),
         ],

@@ -67,6 +67,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/A4books.png
+    - images/bagg.jpeg
     - images/BasmatiRice.jpeg
     - images/bathingsoap.jpeg
     - images/bathingsoapp.jpeg
@@ -79,6 +80,9 @@ flutter:
     - images/brooksidee.jpeg
     - images/Brooksidemilkd.jpeg
     - images/c1.jpg
+    - images/carrt.png
+    - images/cart2.jpg
+    - images/cart3.jpg
     - images/cats/accessories.png
     - images/cats/dress.png
     - images/cats/formal.png
@@ -98,6 +102,7 @@ flutter:
     - images/drinks22.jpeg
     - images/drinksa.png
     - images/drinkss.jpg
+    - images/google.png
     - images/handsanitizer.jpeg
     - images/laundry.png
     - images/lays.png
@@ -124,12 +129,14 @@ flutter:
     - images/products/skt1.jpeg
     - images/products/skt2.jpeg
     - images/Rice.jpeg
+    - images/shoocart.png
     - images/Soap.jpeg
     - images/softdrinks.jpeg
     - images/suagar.jpg
     - images/sun.jpeg
     - images/sunlight.jpg
     - images/ToothPaste.png
+    - images/ueablogo.png
     - images/urban.jpeg
     - images/urbanbites.jpg
     - images/Vasline.jpeg

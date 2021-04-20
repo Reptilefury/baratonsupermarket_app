@@ -17,6 +17,11 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   final GoogleSignIn googleSignIn = new GoogleSignIn();
   final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  final _formKey = GlobalKey<FormState>();
+
+  TextEditingController _emailTextController = TextEditingController();
+  TextEditingController _passwordTextController = TextEditingController();
+
   SharedPreferences preferences;
   bool loading = false;
   bool isLogedin = false;
@@ -123,44 +128,212 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      /*appBar: AppBar(
         backgroundColor: Colors.white,
         centerTitle: true,
         title: new Text(
           "Login",
           style: TextStyle(color: Colors.deepPurple.shade900),
         ),
-      ),
+      ),*/
+
       body: Stack(
         children: <Widget>[
-          Visibility(
-              child: Center(
+          Container(
+            alignment: Alignment.center,
             child: Container(
               alignment: Alignment.center,
-              color: Colors.white.withOpacity(0.9),
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Colors.deepPurple),
+              height: 520,
+              child: Image.asset(
+                'images/shoocart.png',
+                fit: BoxFit.cover,
+                height: double.infinity,
+                width: double.infinity,
+                //height: 300,
+                /*  width: 450.0,
+                height: 650.0*/
               ),
             ),
-          ))
+
+            //TODO:: make a UEAB logo
+          ),
+         GestureDetector(
+            onTap: () {
+              handleSignedIn();
+            },
+            child: Container(
+              alignment: Alignment.bottomCenter,
+              child: Image.asset(
+                'images/google.png',
+                width: 50.0,
+                height: 80.0,
+              ),
+            ),
+          ),
+
+          Container(
+            color: Colors.black.withOpacity(0.4),
+            width: double.infinity,
+            height: double.infinity,
+          ),
+          new Container(
+            alignment: Alignment.topCenter,
+            child: Image.asset(
+              'images/ueablogo.png',
+              width: 150.0,
+              height: 150.0,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 350.0),
+            child: Center(
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Material(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white,
+                        elevation: 0.0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 12.0),
+                          child: TextFormField(
+                            controller: _emailTextController,
+                            decoration: InputDecoration(
+                              hintText: "Email",
+                              icon: Icon(Icons.email, color: Colors.deepPurple[900],),
+                              //  border: OutlineInputBorder().no,
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                Pattern pattern =
+                                    r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+                                RegExp regex = new RegExp(pattern);
+                                if (!regex.hasMatch(value))
+                                  return 'Please make sure your email is valid';
+                                else
+                                  return null;
+                              }
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Material(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.white,
+                        elevation: 0.0,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 12.0),
+                          child: TextFormField(
+                            controller: _passwordTextController,
+                            decoration: InputDecoration(
+                              hintText: "Password",
+                              icon: Icon(Icons.lock_open_outlined, color: Colors.deepPurple[900]  ,),
+                              //  border: OutlineInputBorder().no,
+                            ),
+                            validator: (value) {
+                              if (value.isEmpty) {
+                                return "The password field cannot be empty";
+                              } else if (value.length < 6) {
+                                return "the password has to be atleast 6 characters long";
+                              }
+                              return null;
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: Colors.deepPurple[900],
+                          elevation: 0.0,
+                          child: MaterialButton(
+                              onPressed: () {},
+                              minWidth: MediaQuery.of(context).size.width,
+                          child: Text("Login", textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 19.0),
+                          ),
+                          ),
+                        )),
+                  SizedBox(height: 10,),
+                    Text("Other Sign in options", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 15),),
+                    Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Material(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: Colors.red,
+                          //color: Colors.deepPurple[900],
+                          elevation: 0.0,
+                          child: Container(
+                            child: MaterialButton(
+                              onPressed: () {
+                                handleSignedIn();
+                              },
+                              minWidth: MediaQuery.of(context).size.width,
+                              child: Text("Google Sign in ", textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 19.0),
+                              ),
+                            ),
+                          ),
+                        )),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          /*        Container(
+            alignment: Alignment.bottomCenter,
+            child: Image.asset('images /google.png',
+              width: 100.0,
+              height: 80.0,
+            ),
+          ),*/
+          Visibility(
+            visible: loading ?? true,
+            child: Center(
+              child: Container(
+                alignment: Alignment.center,
+                color: Colors.white.withOpacity(0.9),
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.deepPurple),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
-      bottomNavigationBar: Container(
+/*      bottomNavigationBar: Container(
+        height: 60,
         child: Padding(
           padding: const EdgeInsets.only(
               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
-          child: FlatButton(
-            color: Colors.deepPurple,
-            onPressed: () {
-              handleSignedIn();
-            },
-            child: Text(
-              "Sign in / Sign up with google",
-              style: TextStyle(color: Colors.white),
-            ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Expanded(
+                child: FlatButton(
+                  color: Colors.deepPurple[900],
+                  onPressed: () {
+                    handleSignedIn();
+                  },
+                  child: Text(
+                    "Sign in / Sign up with google",
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18.0
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
-      ),
+      ),*/
     );
   }
 }
