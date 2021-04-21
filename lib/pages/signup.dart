@@ -21,13 +21,14 @@ class _SignupState extends State<Signup> {
   TextEditingController _passwordTextController = TextEditingController();
   TextEditingController _nameTextController = TextEditingController();
   TextEditingController _confirmPasswordController = TextEditingController();
-   String gender;
+  String gender;
+  String groupValue = "male";
   bool loading = false;
   bool isLogedin = false;
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height / 3;
+    //double height = MediaQuery.of(context).size.height / 3;
     return Scaffold(
       /*appBar: AppBar(
         backgroundColor: Colors.white,
@@ -58,7 +59,7 @@ class _SignupState extends State<Signup> {
 
             //TODO:: make a UEAB logo
           ),
-      /*    GestureDetector(
+          /*    GestureDetector(
             onTap: () {},
             child: Container(
               alignment: Alignment.bottomCenter,
@@ -69,7 +70,7 @@ class _SignupState extends State<Signup> {
               ),
             ),
           ),*/
-           Container(
+          Container(
             color: Colors.black.withOpacity(0.4),
             width: double.infinity,
             height: double.infinity,
@@ -120,6 +121,37 @@ class _SignupState extends State<Signup> {
                         ),
                       ),
                     ),
+                 Padding(
+                   padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
+                   child: new   Container(
+                        color: Colors.white,
+                        child: Row(
+                          children: <Widget>[
+                            Expanded(
+                              child: ListTile(
+                                title: Text(
+                                  "Male",
+                                  style: TextStyle(color: Colors.black87),
+                                ),
+                                trailing:
+                                   Radio(value: "male",
+                                    groupValue: groupValue,
+                                    onChanged: (e) => valueChanged(e))),
+                              ),
+                            Expanded(
+                                child: ListTile(
+                                    title: Text("female",
+                                      textAlign: TextAlign.end,
+                                      style: TextStyle(color: Colors.black87),),
+                                    trailing:
+                                    Radio(value: "female",
+                                        groupValue: groupValue,
+                                        onChanged: (e) => valueChanged(e))),
+                            ),
+                          ],
+                        ),
+                      ),
+                 ),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(14.0, 8.0, 12.0, 8.0),
                       child: Material(
@@ -163,6 +195,7 @@ class _SignupState extends State<Signup> {
                           padding: const EdgeInsets.only(left: 12.0),
                           child: TextFormField(
                             controller: _passwordTextController,
+                            obscureText: true,
                             decoration: InputDecoration(
                               hintText: "Password",
                               icon: Icon(
@@ -193,6 +226,7 @@ class _SignupState extends State<Signup> {
                           padding: const EdgeInsets.only(left: 12.0),
                           child: TextFormField(
                             controller: _confirmPasswordController,
+                            obscureText: true,
                             decoration: InputDecoration(
                               hintText: "Confirm password",
                               icon: Icon(
@@ -224,7 +258,7 @@ class _SignupState extends State<Signup> {
                             onPressed: () {},
                             minWidth: MediaQuery.of(context).size.width,
                             child: Text(
-                              "Register",
+                              "Sign up",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Colors.white,
@@ -233,7 +267,7 @@ class _SignupState extends State<Signup> {
                             ),
                           ),
                         )),
-              /*      Padding(
+                    /*      Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         "Forgot password?",
@@ -248,10 +282,15 @@ class _SignupState extends State<Signup> {
                     Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                         child: InkWell(
-                          onTap: () {Navigator.pop(context);},
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
                           child: Text(
                             "Login",
-                            style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 15),
+                            style: TextStyle(
+                                color: Colors.black87,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15),
                           ),
                         )
                         /*RichText(
@@ -335,7 +374,7 @@ class _SignupState extends State<Signup> {
           ),
         ],
       ),
-     /* bottomNavigationBar: Container(
+      /* bottomNavigationBar: Container(
         height: 60,
         child: Padding(
             padding: const EdgeInsets.all(16.0),
@@ -361,7 +400,7 @@ class _SignupState extends State<Signup> {
                 ),
               ),
             )),
-        *//*child: Padding(
+        */ /*child: Padding(
           padding: const EdgeInsets.only(
               left: 12.0, right: 12.0, top: 8.0, bottom: 8.0),
           child: Row(
@@ -382,8 +421,20 @@ class _SignupState extends State<Signup> {
               ),
             ],
           ),
-        ),*//*
+        ),*/ /*
       ),*/
     );
+  }
+
+  valueChanged(e) {
+    setState(() {
+      if (e == "male") {
+        groupValue = e;
+        gender = e;
+      } else if (e == "female") {
+        groupValue = e;
+        gender = e;
+      }
+    });
   }
 }
