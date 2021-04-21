@@ -1,3 +1,4 @@
+
 import 'package:baratonsupermarket_app/pages/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,7 @@ class _LoginState extends State<Login> {
   SharedPreferences preferences;
   bool loading = false;
   bool isLogedin = false;
+  bool hidePass = true;
 
   @override
   void initState() {
@@ -37,6 +39,14 @@ class _LoginState extends State<Login> {
     setState(() {
       loading = true;
     });
+    final User user = await firebaseAuth.currentUser;
+    {
+    if (user != null) {
+    setState(()=>
+    isLogedin = true);
+    }
+    }
+
     preferences = await SharedPreferences.getInstance();
     isLogedin = await googleSignIn.isSignedIn();
     if (isLogedin) {
@@ -159,16 +169,19 @@ class _LoginState extends State<Login> {
 
             //TODO:: make a UEAB logo
           ),
-          GestureDetector(
-            onTap: () {
-              handleSignedIn();
-            },
-            child: Container(
-              alignment: Alignment.bottomCenter,
-              child: Image.asset(
-                'images/google.png',
-                width: 50.0,
-                height: 80.0,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                handleSignedIn();
+              },
+              child: Container(
+                alignment: Alignment.bottomCenter,
+                child: Image.asset(
+                  'images/google.png',
+                  width: 50.0,
+                  height: 80.0,
+                ),
               ),
             ),
           ),
@@ -236,24 +249,35 @@ class _LoginState extends State<Login> {
                         elevation: 0.0,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 12.0),
-                          child: TextFormField(
-                            controller: _passwordTextController,
-                            decoration: InputDecoration(
-                              hintText: "Password",
-                              icon: Icon(
-                                Icons.lock_open_outlined,
-                                color: Colors.deepPurple[900],
+                          child: ListTile(
+
+                            title: TextFormField(
+                              controller: _passwordTextController,
+                              obscureText: hidePass,
+                              decoration: InputDecoration(
+                                hintText: "Password",
+                                icon: Icon(
+                                  Icons.lock_open_outlined,
+                                  color: Colors.deepPurple[900],
+                                ),
+                                //  border: OutlineInputBorder().no,
                               ),
-                              //  border: OutlineInputBorder().no,
+                              validator: (value) {
+                                if (value.isEmpty) {
+                                  return "The password field cannot be empty";
+                                } else if (value.length < 6) {
+                                  return "the password has to be atleast 6 characters long";
+                                }
+                                return null;
+                              },
                             ),
-                            validator: (value) {
-                              if (value.isEmpty) {
-                                return "The password field cannot be empty";
-                              } else if (value.length < 6) {
-                                return "the password has to be atleast 6 characters long";
-                              }
-                              return null;
-                            },
+                              trailing: IconButton(
+                                  icon: Icon(Icons.remove_red_eye, size: 20.0,),
+                                  onPressed: () {
+                                   setState(() {
+                                     hidePass = false;
+                                   });
+                                  })
                           ),
                         ),
                       ),
@@ -266,7 +290,8 @@ class _LoginState extends State<Login> {
                           color: Colors.deepPurple[900],
                           elevation: 0.0,
                           child: MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                            },
                             minWidth: MediaQuery.of(context).size.width,
                             child: Text(
                               "Login",
@@ -317,6 +342,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),*/
                         ),
+
 
                     //Expanded(child: Container())
                     /* Divider(

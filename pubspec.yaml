@@ -36,6 +36,10 @@ dependencies:
   google_sign_in: ^5.0.2
   shared_preferences: ^2.0.5
   fluttertoast: ^8.0.4
+  cached_network_image: ^3.0.0
+  images_picker: ^1.2.0
+  intl: ^0.17.0
+  firebase_database: ^6.1.2
   #js: ^0.6.2
   #web_socket_channel: ^1.1.0
   #firebase: ^5.0.0

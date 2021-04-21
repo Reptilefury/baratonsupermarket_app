@@ -1,5 +1,6 @@
 import 'package:baratonsupermarket_app/components/products.dart';
 import 'package:baratonsupermarket_app/pages/login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:baratonsupermarket_app/pages/size_config.dart';
 import 'package:baratonsupermarket_app/pages/special_offers.dart';
@@ -9,6 +10,7 @@ import 'package:baratonsupermarket_app/pages/cart.dart';
 
 //my own imports
 import 'package:baratonsupermarket_app/components/horizontal_listview.dart';
+import 'login.dart';
 
 //import 'components/products.dart';
 class HomePage extends StatefulWidget {
@@ -191,8 +193,11 @@ class _HomePageState extends State<HomePage> {
                   icon: Icon(Icons.arrow_back_ios, color: Colors.deepPurple,),
                   iconSize: 20,
                   onPressed: () {
-                    Navigator.push(this.context,
-                        MaterialPageRoute(builder: (context) => Login()));
+                    FirebaseAuth.instance.signOut().then((value){
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Login()));
+                    });
+                    /*Navigator.push(this.context,
+                        MaterialPageRoute(builder: (context) => Login()));*/
                   },
                   /*
                   Icons.help,
