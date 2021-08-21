@@ -1,0 +1,925 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+MERGED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+MERGED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-46:12
+MERGED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-37:12
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [com.stripe:stripe-android:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a88a6bebe773e2f04d14185c9ad36831/jetified-stripe-android-16.10.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:2:1-69:12
+MERGED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/af2e74b4e57040605edd0a047e349c6a/jetified-firebase-analytics-19.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/31522670b163342d3a6c7248bcd4c07e/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a2229feef7fd78aee80f70d24b1c1d5f/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/49298e9baebc5087ff41ec35dfe9a5e1/jetified-play-services-measurement-sdk-19.0.1/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afa2c8ca3322bacd5b58933566556c27/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/02e19465f36c78bf66865378838feb91/material-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d17580104e6ba9f377c375fa6ccebd3a/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a9deaed902011d2bd9a982390cf14c54/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/299f67d657deeee9c599ebba82e8b37a/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8ceb167f07308d9c4a843b976131f381/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc897bc09b461c590d0b94e7cc972356/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6ed27db7106f3329dfd7983a20374018/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1b055e454e069e35842ce9f8cea9732f/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9af6a60de33aef2d82061abd0dc10bdf/jetified-play-services-wallet-18.1.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment-ktx:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ec23f66fce9d929cf100200e10eec400/jetified-fragment-ktx-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bf0318752f80343696e1fa66cf6d140f/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5e064178e6998a1b2062c4dd02be9093/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ca2d59d6cc887889b28889fa9191c926/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f065f58b6ac35daddc657702b7de4334/jetified-play-services-identity-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6bef383a538f90b0821718c01f920f15/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3718f1df0805134937c1bbb87f12480/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/388c9245bb4a1cd6b2637cf68af4311b/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b84293ce664d04f4e3456fd913135db0/jetified-play-services-measurement-base-19.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/418eedc456e95f4ae177c78bc4b50569/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f3839a3ce5fcd11305d598f6b4cae8fc/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/2024572c74dc91dcbf24593c67305aaf/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ddcd9b5ba09499f3d80634d8ba2d1618/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f1f62b15c08de0282c5e0e11ce74c0b3/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eabb740876ca55db35579d379c5020d1/browser-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1917ad128f33d2973604414c8db14acd/jetified-viewbinding-4.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6dd33032184622358f51bac4ce280a91/recyclerview-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4583acacb8cb59b73c32077930c8af8e/jetified-activity-ktx-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1fd791534a851d831f75c91aa612c3e7/jetified-activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a964b9f02d840b2285b2feb80f69c120/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9269813307a288ab090f81b77b724ec/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/01d6288f3bc0e0917fc5e32f13b06a3e/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/36bc9dde0d2360dbffdf6746df2bb091/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/367a1045e7095d78f69136e2c919c52b/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b216ef210d64f61a66070acc01518640/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fc68361dba4d84373dea63c1d56e8804/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/dcfe8ee95ccd4477652bf5429ca5cb69/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/aaef5f94885c551b58863ac490fbf85e/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/80be3f883e3518e100d781fb461fdc35/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e98f33326b3f6cfb7345fa8c95b57153/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d5a45fb770346a9da14e9e740a58bc03/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1df1019e62cec53265123479cf832aa5/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1c23eaf495c537856fa06ce437d3bc54/jetified-lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7db93063730f953a0234f28011c4ab9a/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/522934df457d62d73e606689d1f6adab/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb35b6dc90ff981574dd556af374b9ae/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d16e0b646f62ea91ed1bae2e41d92488/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7a2798b584823d7d773195f64a83525b/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1597964a77c06672ea1a749557426e72/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/055599c08c4051befb5586a4372fa86e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e5498ca064aaecf5adfe0c98e4137a8f/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a28dd3a56013d16c66f9ffc4dfe551ed/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee7a48cd21477e759134c7d8e5c03711/lifecycle-livedata-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/71d74799d4fa911c1c308e381d231e24/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5ae298327d6fa85ad6f8584021598c56/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4c0b6b3e01c9c096d99ea3a3f80c0b65/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afabcf77fc9552cd27a0599cc704c5a6/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1db0c529fff9e904d8b858651554ffae/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.28.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/21e5b6de1d015ed3251b2e8c885e10e1/jetified-grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d26d65b27a2a54fdf2b3e8fd8ac13720/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:2:5-39
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:1-41:12
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:3:4-40:19
+MERGED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
+MERGED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-35:19
+MERGED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-35:19
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:16:5-67:19
+MERGED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:16:5-67:19
+MERGED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:9:5-16:19
+MERGED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:9:5-16:19
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/af2e74b4e57040605edd0a047e349c6a/jetified-firebase-analytics-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/af2e74b4e57040605edd0a047e349c6a/jetified-firebase-analytics-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a2229feef7fd78aee80f70d24b1c1d5f/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a2229feef7fd78aee80f70d24b1c1d5f/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/49298e9baebc5087ff41ec35dfe9a5e1/jetified-play-services-measurement-sdk-19.0.1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/49298e9baebc5087ff41ec35dfe9a5e1/jetified-play-services-measurement-sdk-19.0.1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afa2c8ca3322bacd5b58933566556c27/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afa2c8ca3322bacd5b58933566556c27/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.material:material:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/02e19465f36c78bf66865378838feb91/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/02e19465f36c78bf66865378838feb91/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6ed27db7106f3329dfd7983a20374018/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6ed27db7106f3329dfd7983a20374018/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5e064178e6998a1b2062c4dd02be9093/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5e064178e6998a1b2062c4dd02be9093/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f065f58b6ac35daddc657702b7de4334/jetified-play-services-identity-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f065f58b6ac35daddc657702b7de4334/jetified-play-services-identity-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6bef383a538f90b0821718c01f920f15/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6bef383a538f90b0821718c01f920f15/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3718f1df0805134937c1bbb87f12480/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3718f1df0805134937c1bbb87f12480/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/388c9245bb4a1cd6b2637cf68af4311b/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/388c9245bb4a1cd6b2637cf68af4311b/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b84293ce664d04f4e3456fd913135db0/jetified-play-services-measurement-base-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b84293ce664d04f4e3456fd913135db0/jetified-play-services-measurement-base-19.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f3839a3ce5fcd11305d598f6b4cae8fc/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f3839a3ce5fcd11305d598f6b4cae8fc/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1df1019e62cec53265123479cf832aa5/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1df1019e62cec53265123479cf832aa5/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:4:9-37
+	android:icon
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:5:9-43
+	android:theme
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:11:18-74
+activity#com.example.shopping_app.MainActivity
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:6:9-34:20
+	android:launchMode
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:8:13-43
+	android:hardwareAccelerated
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:11:13-47
+	android:windowSoftInputMode
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:12:13-55
+	android:configChanges
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:10:13-163
+	android:theme
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:9:13-47
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:7:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:17:13-20:17
+	android:resource
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:19:15-52
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:18:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:26:13-29:17
+	android:resource
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:28:15-61
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:27:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:30:13-33:29
+action#android.intent.action.MAIN
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:31:17-68
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:32:27-74
+meta-data#flutterEmbedding
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:37:9-39:33
+	android:value
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:39:13-30
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:38:13-44
+uses-sdk
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.stripe:stripe-android:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a88a6bebe773e2f04d14185c9ad36831/jetified-stripe-android-16.10.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:stripe-android:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a88a6bebe773e2f04d14185c9ad36831/jetified-stripe-android-16.10.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/af2e74b4e57040605edd0a047e349c6a/jetified-firebase-analytics-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/af2e74b4e57040605edd0a047e349c6a/jetified-firebase-analytics-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/31522670b163342d3a6c7248bcd4c07e/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/31522670b163342d3a6c7248bcd4c07e/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a2229feef7fd78aee80f70d24b1c1d5f/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a2229feef7fd78aee80f70d24b1c1d5f/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/49298e9baebc5087ff41ec35dfe9a5e1/jetified-play-services-measurement-sdk-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/49298e9baebc5087ff41ec35dfe9a5e1/jetified-play-services-measurement-sdk-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afa2c8ca3322bacd5b58933566556c27/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afa2c8ca3322bacd5b58933566556c27/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/02e19465f36c78bf66865378838feb91/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/02e19465f36c78bf66865378838feb91/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d17580104e6ba9f377c375fa6ccebd3a/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d17580104e6ba9f377c375fa6ccebd3a/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a9deaed902011d2bd9a982390cf14c54/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a9deaed902011d2bd9a982390cf14c54/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/299f67d657deeee9c599ebba82e8b37a/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/299f67d657deeee9c599ebba82e8b37a/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8ceb167f07308d9c4a843b976131f381/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8ceb167f07308d9c4a843b976131f381/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc897bc09b461c590d0b94e7cc972356/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc897bc09b461c590d0b94e7cc972356/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6ed27db7106f3329dfd7983a20374018/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6ed27db7106f3329dfd7983a20374018/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1b055e454e069e35842ce9f8cea9732f/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1b055e454e069e35842ce9f8cea9732f/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9af6a60de33aef2d82061abd0dc10bdf/jetified-play-services-wallet-18.1.3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9af6a60de33aef2d82061abd0dc10bdf/jetified-play-services-wallet-18.1.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ec23f66fce9d929cf100200e10eec400/jetified-fragment-ktx-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ec23f66fce9d929cf100200e10eec400/jetified-fragment-ktx-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bf0318752f80343696e1fa66cf6d140f/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bf0318752f80343696e1fa66cf6d140f/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5e064178e6998a1b2062c4dd02be9093/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5e064178e6998a1b2062c4dd02be9093/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ca2d59d6cc887889b28889fa9191c926/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ca2d59d6cc887889b28889fa9191c926/jetified-firebase-database-collection-18.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f065f58b6ac35daddc657702b7de4334/jetified-play-services-identity-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f065f58b6ac35daddc657702b7de4334/jetified-play-services-identity-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6bef383a538f90b0821718c01f920f15/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6bef383a538f90b0821718c01f920f15/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3718f1df0805134937c1bbb87f12480/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3718f1df0805134937c1bbb87f12480/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/388c9245bb4a1cd6b2637cf68af4311b/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/388c9245bb4a1cd6b2637cf68af4311b/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b84293ce664d04f4e3456fd913135db0/jetified-play-services-measurement-base-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b84293ce664d04f4e3456fd913135db0/jetified-play-services-measurement-base-19.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/418eedc456e95f4ae177c78bc4b50569/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/418eedc456e95f4ae177c78bc4b50569/jetified-firebase-installations-interop-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f3839a3ce5fcd11305d598f6b4cae8fc/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f3839a3ce5fcd11305d598f6b4cae8fc/jetified-play-services-tasks-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/2024572c74dc91dcbf24593c67305aaf/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/2024572c74dc91dcbf24593c67305aaf/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ddcd9b5ba09499f3d80634d8ba2d1618/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ddcd9b5ba09499f3d80634d8ba2d1618/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f1f62b15c08de0282c5e0e11ce74c0b3/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f1f62b15c08de0282c5e0e11ce74c0b3/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eabb740876ca55db35579d379c5020d1/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eabb740876ca55db35579d379c5020d1/browser-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1917ad128f33d2973604414c8db14acd/jetified-viewbinding-4.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.2.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1917ad128f33d2973604414c8db14acd/jetified-viewbinding-4.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6dd33032184622358f51bac4ce280a91/recyclerview-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6dd33032184622358f51bac4ce280a91/recyclerview-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4583acacb8cb59b73c32077930c8af8e/jetified-activity-ktx-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4583acacb8cb59b73c32077930c8af8e/jetified-activity-ktx-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1fd791534a851d831f75c91aa612c3e7/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1fd791534a851d831f75c91aa612c3e7/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a964b9f02d840b2285b2feb80f69c120/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a964b9f02d840b2285b2feb80f69c120/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9269813307a288ab090f81b77b724ec/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9269813307a288ab090f81b77b724ec/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/01d6288f3bc0e0917fc5e32f13b06a3e/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/01d6288f3bc0e0917fc5e32f13b06a3e/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/36bc9dde0d2360dbffdf6746df2bb091/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/36bc9dde0d2360dbffdf6746df2bb091/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/367a1045e7095d78f69136e2c919c52b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/367a1045e7095d78f69136e2c919c52b/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b216ef210d64f61a66070acc01518640/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/b216ef210d64f61a66070acc01518640/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fc68361dba4d84373dea63c1d56e8804/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fc68361dba4d84373dea63c1d56e8804/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/dcfe8ee95ccd4477652bf5429ca5cb69/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/dcfe8ee95ccd4477652bf5429ca5cb69/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/aaef5f94885c551b58863ac490fbf85e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/aaef5f94885c551b58863ac490fbf85e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/80be3f883e3518e100d781fb461fdc35/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/80be3f883e3518e100d781fb461fdc35/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e98f33326b3f6cfb7345fa8c95b57153/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e98f33326b3f6cfb7345fa8c95b57153/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d5a45fb770346a9da14e9e740a58bc03/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d5a45fb770346a9da14e9e740a58bc03/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1df1019e62cec53265123479cf832aa5/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1df1019e62cec53265123479cf832aa5/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1c23eaf495c537856fa06ce437d3bc54/jetified-lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1c23eaf495c537856fa06ce437d3bc54/jetified-lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7db93063730f953a0234f28011c4ab9a/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7db93063730f953a0234f28011c4ab9a/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/522934df457d62d73e606689d1f6adab/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/522934df457d62d73e606689d1f6adab/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb35b6dc90ff981574dd556af374b9ae/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb35b6dc90ff981574dd556af374b9ae/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d16e0b646f62ea91ed1bae2e41d92488/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d16e0b646f62ea91ed1bae2e41d92488/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7a2798b584823d7d773195f64a83525b/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/7a2798b584823d7d773195f64a83525b/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1597964a77c06672ea1a749557426e72/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1597964a77c06672ea1a749557426e72/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/055599c08c4051befb5586a4372fa86e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/055599c08c4051befb5586a4372fa86e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e5498ca064aaecf5adfe0c98e4137a8f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e5498ca064aaecf5adfe0c98e4137a8f/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a28dd3a56013d16c66f9ffc4dfe551ed/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a28dd3a56013d16c66f9ffc4dfe551ed/jetified-lifecycle-livedata-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee7a48cd21477e759134c7d8e5c03711/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee7a48cd21477e759134c7d8e5c03711/lifecycle-livedata-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/71d74799d4fa911c1c308e381d231e24/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/71d74799d4fa911c1c308e381d231e24/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5ae298327d6fa85ad6f8584021598c56/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/5ae298327d6fa85ad6f8584021598c56/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4c0b6b3e01c9c096d99ea3a3f80c0b65/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/4c0b6b3e01c9c096d99ea3a3f80c0b65/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afabcf77fc9552cd27a0599cc704c5a6/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/afabcf77fc9552cd27a0599cc704c5a6/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1db0c529fff9e904d8b858651554ffae/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1db0c529fff9e904d8b858651554ffae/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/21e5b6de1d015ed3251b2e8c885e10e1/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.28.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/21e5b6de1d015ed3251b2e8c885e10e1/jetified-grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d26d65b27a2a54fdf2b3e8fd8ac13720/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d26d65b27a2a54fdf2b3e8fd8ac13720/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:74:9-80:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar
+ADDED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/e9d3c280d8a8b87ce54398bd5af9c6b7/jetified-play-services-measurement-sdk-api-19.0.1/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/21e5b6de1d015ed3251b2e8c885e10e1/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.28.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/21e5b6de1d015ed3251b2e8c885e10e1/jetified-grpc-android-1.28.0/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+	android:exported
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+	android:permission
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+	android:exported
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+	android:value
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
+ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+	android:authorities
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+	android:exported
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+	android:initOrder
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+	android:name
+		ADDED from [:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+meta-data#com.google.android.gms.wallet.api.enabled
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-69
+activity#com.gettipsi.stripe.OpenBrowserActivity
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:75
+	android:launchMode
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-44
+	android:exported
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:theme
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-72
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-67
+activity#com.gettipsi.stripe.RedirectUriReceiver
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-34:20
+	android:launchMode
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-44
+	android:exported
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-36
+	android:theme
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-83
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-67
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:example
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-33:29
+action#android.intent.action.VIEW
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+category#android.intent.category.DEFAULT
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+data
+ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+	android:scheme
+		ADDED from [:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
+ADDED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+queries
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:10:5-14:15
+package#com.android.chrome
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:13:9-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:13:18-51
+activity#com.stripe.android.view.AddPaymentMethodActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:17:9-19:57
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:19:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:18:13-76
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:20:9-22:57
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:22:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:21:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:23:9-25:57
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:25:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:24:13-71
+activity#com.stripe.android.view.PaymentAuthWebViewActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:26:9-29:58
+	android:windowSoftInputMode
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:29:13-55
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:28:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:27:13-78
+activity#com.stripe.android.view.PaymentRelayActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:30:9-32:61
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:31:13-72
+activity#com.stripe.android.payments.StripeBrowserLauncherActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:38:9-54:20
+	android:launchMode
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:40:13-43
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:41:13-58
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:39:13-85
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:payment_return_url+data:path:/${applicationId}+data:scheme:stripesdk
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:42:13-53:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:payment_return_url+data:path:/com.sneaker.app+data:scheme:stripesdk
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:42:13-53:29
+activity#com.stripe.android.view.Stripe3ds2CompletionActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:55:9-57:57
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:57:13-54
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:56:13-80
+activity#com.stripe.android.paymentsheet.PaymentSheetActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:58:9-60:69
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:60:13-66
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:59:13-80
+activity#com.stripe.android.paymentsheet.PaymentOptionsActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:61:9-63:69
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:63:13-66
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:62:13-82
+activity#com.stripe.android.googlepay.StripeGooglePayActivity
+ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:64:9-66:66
+	android:theme
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:66:13-63
+	android:name
+		ADDED from [com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:65:13-80
+activity#com.stripe.android.stripe3ds2.views.ChallengeActivity
+ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:10:9-12:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:12:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:11:13-81
+activity#com.stripe.android.stripe3ds2.views.ChallengeProgressActivity
+ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:13:9-15:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:15:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:14:13-89
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa8f9175c376e414799cc454a253c3a0/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+service#com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+	android:enabled
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+intent-filter#action:name:com.google.firebase.auth.api.gms.service.START+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+action#com.google.firebase.auth.api.gms.service.START
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3aadb98281f16f6606e64f073edd7da7/jetified-play-services-measurement-impl-19.0.1/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:40:13-87
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58

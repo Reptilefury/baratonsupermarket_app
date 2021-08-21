@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">252620661002-7bvi2p50f1eje4c8ge34t3kos3504lcl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sneaker-f7304-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">252620661002</string>
+    <string name="google_api_key" translatable="false">AIzaSyAi6jnS-79wu1RL4UQcC1aoK4KP2WFpB3g</string>
+    <string name="google_app_id" translatable="false">1:252620661002:android:abfd52120aa0b814621af3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAi6jnS-79wu1RL4UQcC1aoK4KP2WFpB3g</string>
+    <string name="google_storage_bucket" translatable="false">sneaker-f7304.appspot.com</string>
+    <string name="project_id" translatable="false">sneaker-f7304</string>
+</resources>

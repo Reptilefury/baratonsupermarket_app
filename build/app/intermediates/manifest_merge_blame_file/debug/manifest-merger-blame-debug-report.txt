@@ -1,0 +1,601 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sneaker.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+16-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+17    <queries>
+17-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:10:5-14:15
+18
+19        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+20        <package android:name="com.android.chrome" />
+20-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:13:9-54
+20-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:13:18-51
+21    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+22-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:26:22-107
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+28
+29    <application
+29-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:3:4-40:19
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fa46deece1115285c2ba652e2c99b6fa/core-1.5.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:5:9-43
+33        android:label="shopping_app"
+33-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:4:9-37
+34        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+34-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:11:18-74
+35        <activity
+35-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:6:9-34:20
+36            android:name="com.example.shopping_app.MainActivity"
+36-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:7:13-41
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:10:13-163
+38            android:hardwareAccelerated="true"
+38-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:11:13-47
+39            android:launchMode="singleTop"
+39-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:8:13-43
+40            android:theme="@style/LaunchTheme"
+40-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:9:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:12:13-55
+42
+43            <!--
+44                 Specifies an Android theme to apply to this Activity as soon as
+45                 the Android process has started. This theme is visible to the user
+46                 while the Flutter UI initializes. After that, this theme continues
+47                 to determine the Window background behind the Flutter UI.
+48            -->
+49            <meta-data
+49-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:17:13-20:17
+50                android:name="io.flutter.embedding.android.NormalTheme"
+50-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:18:15-70
+51                android:resource="@style/NormalTheme" />
+51-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:19:15-52
+52            <!--
+53                 Displays an Android View that continues showing the launch screen
+54                 Drawable until Flutter paints its first frame, then this splash
+55                 screen fades out. A splash screen is useful to avoid any visual
+56                 gap between the end of Android's launch screen and the painting of
+57                 Flutter's first frame.
+58            -->
+59            <meta-data
+59-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:26:13-29:17
+60                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+60-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:27:15-79
+61                android:resource="@drawable/launch_background" />
+61-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:28:15-61
+62
+63            <intent-filter>
+63-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:30:13-33:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:31:17-68
+64-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:31:25-66
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+66-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:32:17-76
+66-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:32:27-74
+67            </intent-filter>
+68        </activity>
+69        <!--
+70             Don't delete the meta-data below.
+71             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+72        -->
+73        <meta-data
+73-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:37:9-39:33
+74            android:name="flutterEmbedding"
+74-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:38:13-44
+75            android:value="2" />
+75-->/home/reptilefury/StudioProjects/shopping_app/android/app/src/main/AndroidManifest.xml:39:13-30
+76
+77        <service
+77-->[:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+78            android:name="com.google.firebase.components.ComponentDiscoveryService"
+78-->[:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+79            android:directBootAware="true"
+79-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+80            android:exported="false" >
+80-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+81            <meta-data
+81-->[:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+82                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+82-->[:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[:firebase_auth] /home/reptilefury/StudioProjects/shopping_app/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+84            <meta-data
+84-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+85                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+85-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+87            <meta-data
+87-->[:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+88                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+88-->[:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[:cloud_firestore] /home/reptilefury/StudioProjects/shopping_app/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+90            <meta-data
+90-->[:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+91                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+91-->[:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[:firebase_core] /home/reptilefury/StudioProjects/shopping_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+94                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+94-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+97                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+97-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cd5e28f9587c56ffa1841bef6355fe4f/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+100                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+100-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:20:13-22:85
+103                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+103-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:21:17-111
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/8fff4c1259130455ad4119a4fb75b6e3/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:22:17-82
+105            <meta-data
+105-->[com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:30:13-32:85
+106                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+106-->[com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:31:17-139
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[com.google.android.gms:play-services-measurement-api:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d4b1b0f2c6ddc73fa0032dab75bd0205/jetified-play-services-measurement-api-19.0.1/AndroidManifest.xml:32:17-82
+108            <meta-data
+108-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+109                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+109-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/cb1ab4a87fd8f7e274083edf83882763/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+111        </service>
+112        <service
+112-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+113            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+113-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+114            android:exported="false"
+114-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+115            android:permission="android.permission.BIND_JOB_SERVICE" />
+115-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+116        <service
+116-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+117            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+117-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+118            android:exported="false" >
+118-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+119            <intent-filter>
+119-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+120                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+120-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+120-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+121            </intent-filter>
+122        </service>
+123
+124        <receiver
+124-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+125            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+125-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+126            android:exported="true"
+126-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+127            android:permission="com.google.android.c2dm.permission.SEND" >
+127-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+128            <intent-filter>
+128-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+129                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+129-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+129-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+130            </intent-filter>
+131        </receiver>
+132
+133        <provider
+133-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+134            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+134-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+135            android:authorities="com.sneaker.app.flutterfirebasemessaginginitprovider"
+135-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+136            android:exported="false"
+136-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+137            android:initOrder="99" />
+137-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+138
+139        <meta-data
+139-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+140            android:name="com.google.android.gms.wallet.api.enabled"
+140-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-69
+141            android:value="true" />
+141-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+142
+143        <activity
+143-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:75
+144            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+144-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-67
+145            android:exported="false"
+145-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+146            android:launchMode="singleTask"
+146-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-44
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-72
+148        <activity
+148-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-34:20
+149            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+149-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-67
+150            android:exported="true"
+150-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-36
+151            android:launchMode="singleTask"
+151-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-44
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+152-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-83
+153            <intent-filter>
+153-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-33:29
+154                <action android:name="android.intent.action.VIEW" />
+154-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+154-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+156-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+157                <category android:name="android.intent.category.BROWSABLE" />
+157-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+157-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+158
+159                <data android:scheme="example" />
+159-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+159-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+160            </intent-filter>
+161        </activity>
+162        <activity
+162-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:17:9-19:57
+163            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+163-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:18:13-76
+164            android:theme="@style/StripeDefaultTheme" />
+164-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:19:13-54
+165        <activity
+165-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:20:9-22:57
+166            android:name="com.stripe.android.view.PaymentMethodsActivity"
+166-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:21:13-74
+167            android:theme="@style/StripeDefaultTheme" />
+167-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:22:13-54
+168        <activity
+168-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:23:9-25:57
+169            android:name="com.stripe.android.view.PaymentFlowActivity"
+169-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:24:13-71
+170            android:theme="@style/StripeDefaultTheme" />
+170-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:25:13-54
+171        <activity
+171-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:26:9-29:58
+172            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+172-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:27:13-78
+173            android:theme="@style/StripeDefaultTheme"
+173-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:28:13-54
+174            android:windowSoftInputMode="adjustResize" />
+174-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:29:13-55
+175        <activity
+175-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:30:9-32:61
+176            android:name="com.stripe.android.view.PaymentRelayActivity"
+176-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:31:13-72
+177            android:theme="@style/StripeTransparentTheme" />
+177-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:32:13-58
+178        <!--
+179        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+180        launched the browser Activity will also handle the return URL deep link.
+181        -->
+182        <activity
+182-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:38:9-54:20
+183            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+183-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:39:13-85
+184            android:launchMode="singleTop"
+184-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:40:13-43
+185            android:theme="@style/StripeTransparentTheme" >
+185-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:41:13-58
+186            <intent-filter>
+186-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:42:13-53:29
+187                <action android:name="android.intent.action.VIEW" />
+187-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+187-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+188
+189                <category android:name="android.intent.category.DEFAULT" />
+189-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+189-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+190                <category android:name="android.intent.category.BROWSABLE" />
+190-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+190-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+191
+192                <!-- Must match `DefaultReturnUrl#value`. -->
+193                <data
+193-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+194                    android:host="payment_return_url"
+195                    android:path="/com.sneaker.app"
+196                    android:scheme="stripesdk" />
+196-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+197            </intent-filter>
+198        </activity>
+199        <activity
+199-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:55:9-57:57
+200            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+200-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:56:13-80
+201            android:theme="@style/StripeDefaultTheme" />
+201-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:57:13-54
+202        <activity
+202-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:58:9-60:69
+203            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+203-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:59:13-80
+204            android:theme="@style/StripePaymentSheetDefaultTheme" />
+204-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:60:13-66
+205        <activity
+205-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:61:9-63:69
+206            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+206-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:62:13-82
+207            android:theme="@style/StripePaymentSheetDefaultTheme" />
+207-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:63:13-66
+208        <activity
+208-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:64:9-66:66
+209            android:name="com.stripe.android.googlepay.StripeGooglePayActivity"
+209-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:65:13-80
+210            android:theme="@style/StripeGooglePayDefaultTheme" />
+210-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/0f0761aadde9540af71d51c317c41d1e/jetified-payments-core-16.10.0/AndroidManifest.xml:66:13-63
+211        <activity
+211-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:10:9-12:54
+212            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+212-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:11:13-81
+213            android:theme="@style/Stripe3DS2Theme" />
+213-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:12:13-51
+214        <activity
+214-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:13:9-15:54
+215            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+215-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:14:13-89
+216            android:theme="@style/Stripe3DS2Theme" />
+216-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/08661726917ea336b3378021c4b8a38f/jetified-stripe-3ds2-android-5.3.1/AndroidManifest.xml:15:13-51
+217
+218        <receiver
+218-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+219            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+219-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+220            android:exported="true"
+220-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+221            android:permission="com.google.android.c2dm.permission.SEND" >
+221-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+222            <intent-filter>
+222-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+223                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+223-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+223-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+224            </intent-filter>
+225        </receiver>
+226        <!--
+227             FirebaseMessagingService performs security checks at runtime,
+228             but set to not exported to explicitly avoid allowing another app to call it.
+229        -->
+230        <service
+230-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+231            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+231-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+232            android:directBootAware="true"
+232-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+233            android:exported="false" >
+233-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9e8471200348b48b4c51746da74b5003/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+234            <intent-filter android:priority="-500" >
+234-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+235                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+235-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+235-->[:firebase_messaging] /home/reptilefury/StudioProjects/shopping_app/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+236            </intent-filter>
+237        </service>
+238        <service
+238-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+239            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+239-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+240            android:exported="false" >
+240-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+241            <meta-data
+241-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+242                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+242-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+243                android:value="cct" />
+243-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bdc97c5138ce249c307a8c3ebb6b8bc0/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+244        </service>
+245
+246        <activity
+246-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+247            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+247-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+248            android:excludeFromRecents="true"
+248-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+249            android:exported="true"
+249-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+250            android:launchMode="singleTask"
+250-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+251            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+251-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+252            <intent-filter>
+252-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+253                <action android:name="android.intent.action.VIEW" />
+253-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+253-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+255-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+256                <category android:name="android.intent.category.BROWSABLE" />
+256-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+256-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+257
+258                <data
+258-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+259                    android:host="firebase.auth"
+260                    android:path="/"
+261                    android:scheme="genericidp" />
+261-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+262            </intent-filter>
+263        </activity>
+264        <activity
+264-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+265            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+265-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+266            android:excludeFromRecents="true"
+266-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+267            android:exported="true"
+267-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+268            android:launchMode="singleTask"
+268-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+269            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+269-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+270            <intent-filter>
+270-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+271                <action android:name="android.intent.action.VIEW" />
+271-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+271-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+272
+273                <category android:name="android.intent.category.DEFAULT" />
+273-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+273-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+274                <category android:name="android.intent.category.BROWSABLE" />
+274-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+274-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+275
+276                <data
+276-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+277                    android:host="firebase.auth"
+278                    android:path="/"
+279                    android:scheme="recaptcha" />
+279-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+280            </intent-filter>
+281        </activity>
+282
+283        <service
+283-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+284            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+284-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+285            android:enabled="true"
+285-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+286            android:exported="false" >
+286-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+287            <intent-filter>
+287-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+288                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+288-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+288-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/06e335a88f29e892ea89e02a9cd741a6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+289
+290                <category android:name="android.intent.category.DEFAULT" />
+290-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+290-->[:stripe_payment] /home/reptilefury/StudioProjects/shopping_app/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+291            </intent-filter>
+292        </service>
+293
+294        <provider
+294-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+295            android:name="com.google.firebase.provider.FirebaseInitProvider"
+295-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+296            android:authorities="com.sneaker.app.firebaseinitprovider"
+296-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+297            android:directBootAware="true"
+297-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+298            android:exported="false"
+298-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+299            android:initOrder="100" />
+299-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a43864ea4e098ef6189d5e2b76fd253d/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+300
+301        <receiver
+301-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:29:9-33:20
+302            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+302-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:30:13-85
+303            android:enabled="true"
+303-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:31:13-35
+304            android:exported="false" >
+304-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:32:13-37
+305        </receiver>
+306
+307        <service
+307-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:35:9-38:40
+308            android:name="com.google.android.gms.measurement.AppMeasurementService"
+308-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:36:13-84
+309            android:enabled="true"
+309-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:37:13-35
+310            android:exported="false" />
+310-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:38:13-37
+311        <service
+311-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:39:9-43:72
+312            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+312-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:40:13-87
+313            android:enabled="true"
+313-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:41:13-35
+314            android:exported="false"
+314-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:42:13-37
+315            android:permission="android.permission.BIND_JOB_SERVICE" />
+315-->[com.google.android.gms:play-services-measurement:19.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/247872ec2dc2ca4572fa2162488a83a8/jetified-play-services-measurement-19.0.1/AndroidManifest.xml:43:13-69
+316        <service
+316-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+317            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+317-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+318            android:exported="false"
+318-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+319            android:permission="android.permission.BIND_JOB_SERVICE" >
+319-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+320        </service>
+321
+322        <receiver
+322-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+323            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+323-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+324            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+324-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/f85b86ddd784d63bd8312d4b69d35599/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+325        <uses-library
+325-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+326            android:name="org.apache.http.legacy"
+326-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+327            android:required="false" />
+327-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1bfea3345dc912cd62ab812d09c38eaa/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+328
+329        <activity
+329-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+330            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+330-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+331            android:exported="false"
+331-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+332            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+332-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/ed5f6c13994fba809ac340d49de4dc18/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+333
+334        <meta-data
+334-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+335            android:name="com.google.android.gms.version"
+335-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+336            android:value="@integer/google_play_services_version" />
+336-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/9ecfdf8e12d4022d23d51fbf9e8dd5f4/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+337    </application>
+338
+339</manifest>

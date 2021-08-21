@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "252620661002",
+    "firebase_url": "https://sneaker-f7304-default-rtdb.firebaseio.com",
+    "project_id": "sneaker-f7304",
+    "storage_bucket": "sneaker-f7304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252620661002:android:abfd52120aa0b814621af3",
+        "android_client_info": {
+          "package_name": "com.sneaker.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252620661002-lt1t1qj70d8lnirbsbhvh4794jq38ag7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sneaker.app",
+            "certificate_hash": "9587e616f8f7a98df858daf31f830a4c4c0f3585"
+          }
+        },
+        {
+          "client_id": "252620661002-7bvi2p50f1eje4c8ge34t3kos3504lcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi6jnS-79wu1RL4UQcC1aoK4KP2WFpB3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252620661002-7bvi2p50f1eje4c8ge34t3kos3504lcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
