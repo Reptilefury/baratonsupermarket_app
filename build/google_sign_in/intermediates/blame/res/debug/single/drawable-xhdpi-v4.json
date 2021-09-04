@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_standard_color_18.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/common_full_open_on_phone.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/googleg_disabled_color_18.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+    }
+]

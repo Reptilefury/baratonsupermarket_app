@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/0b729ea68fcb572d154d751af16f010b/material-1.3.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,110",
+                        "endColumns": "54,51",
+                        "endOffsets": "105,157"
+                    }
+                }
+            ]
+        }
+    ]
+}

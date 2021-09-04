@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">71168873677-1vqu0upl9slkrd6n2nvr6j5bmjrdtqv9.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://baratonshop-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">71168873677</string>
+    <string name="google_api_key" translatable="false">AIzaSyD3X3P8A7MY-SWtw85gPFRKdVj9G1mX2Lk</string>
+    <string name="google_app_id" translatable="false">1:71168873677:android:e764fe9f7ec32d2a818584</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD3X3P8A7MY-SWtw85gPFRKdVj9G1mX2Lk</string>
+    <string name="google_storage_bucket" translatable="false">baratonshop.appspot.com</string>
+    <string name="project_id" translatable="false">baratonshop</string>
+</resources>

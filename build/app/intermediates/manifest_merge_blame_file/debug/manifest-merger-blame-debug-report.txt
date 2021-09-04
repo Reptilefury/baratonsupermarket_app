@@ -1,0 +1,706 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.baratonsupermarket_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+15-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+16-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-65
+17-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-62
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+18-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-71
+18-->[:images_picker] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/images_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-68
+19    <queries package="com.example.baratonsupermarket_app" >
+19-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:10:5-14:15
+19-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:14:14-40
+20
+21        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+22        <package android:name="com.android.chrome" />
+22-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:13:9-54
+22-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:13:18-51
+23
+24        <intent>
+24-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:15:9-17:18
+25            <action android:name="android.media.action.IMAGE_CAPTURE" />
+25-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:16:13-73
+25-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:16:21-70
+26        </intent>
+27        <intent>
+27-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:15:9-17:18
+28            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+29        </intent>
+30    </queries>
+31
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+32-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:22:5-79
+32-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:22:22-76
+33    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+33-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:23:5-68
+33-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:23:22-65
+34    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+34-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+34-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+35-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+35-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+36
+37    <uses-feature
+37-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+38        android:glEsVersion="0x00020000"
+38-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+39        android:required="true" />
+39-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+40    <!--
+41 io.flutter.app.FlutterApplication is an android.app.Application that
+42         calls FlutterMain.startInitialization(this); in its onCreate method.
+43         In most cases you can leave this as-is, but you if you want to provide
+44         additional functionality it is fine to subclass or reimplement
+45         FlutterApplication and put your custom class here.
+46    -->
+47    <application
+47-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:8:5-46:19
+48        android:name="io.flutter.app.FlutterApplication"
+48-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:9:9-57
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/d5b34ae0370469b04e42dc82f8427abd/core-1.5.0/AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@mipmap/ic_launcher"
+51-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:11:9-43
+52        android:label="flutter_ecom"
+52-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:10:9-37
+53        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+53-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:11:18-74
+54        <activity
+54-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:12:9-40:20
+55            android:name="com.example.flutter_ecom.MainActivity"
+55-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:13:13-41
+56            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:16:13-163
+57            android:hardwareAccelerated="true"
+57-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:17:13-47
+58            android:launchMode="singleTop"
+58-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:14:13-43
+59            android:theme="@style/LaunchTheme"
+59-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:15:13-47
+60            android:windowSoftInputMode="adjustResize" >
+60-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:18:13-55
+61
+62            <!--
+63                 Specifies an Android theme to apply to this Activity as soon as
+64                 the Android process has started. This theme is visible to the user
+65                 while the Flutter UI initializes. After that, this theme continues
+66                 to determine the Window background behind the Flutter UI.
+67            -->
+68            <meta-data
+68-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:23:13-26:17
+69                android:name="io.flutter.embedding.android.NormalTheme"
+69-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:24:15-70
+70                android:resource="@style/NormalTheme" />
+70-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:25:15-52
+71            <!--
+72                 Displays an Android View that continues showing the launch screen
+73                 Drawable until Flutter paints its first frame, then this splash
+74                 screen fades out. A splash screen is useful to avoid any visual
+75                 gap between the end of Android's launch screen and the painting of
+76                 Flutter's first frame.
+77            -->
+78            <meta-data
+78-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:32:13-35:17
+79                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+79-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:33:15-79
+80                android:resource="@drawable/launch_background" />
+80-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:34:15-61
+81
+82            <intent-filter>
+82-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:36:13-39:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:37:17-68
+83-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:37:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:38:17-76
+85-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:38:27-74
+86            </intent-filter>
+87        </activity>
+88        <!--
+89             Don't delete the meta-data below.
+90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+91        -->
+92        <meta-data
+92-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:43:9-45:33
+93            android:name="flutterEmbedding"
+93-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:44:13-44
+94            android:value="2" />
+94-->/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/android/app/src/main/AndroidManifest.xml:45:13-30
+95
+96        <service
+96-->[:firebase_database] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+97            android:name="com.google.firebase.components.ComponentDiscoveryService"
+97-->[:firebase_database] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+99            android:exported="false" >
+99-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+100            <meta-data
+100-->[:firebase_database] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+101                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+101-->[:firebase_database] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[:firebase_database] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+103            <meta-data
+103-->[:cloud_firestore] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+104-->[:cloud_firestore] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-134
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[:cloud_firestore] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+106            <meta-data
+106-->[:firebase_auth] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+107                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+107-->[:firebase_auth] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[:firebase_auth] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+109            <meta-data
+109-->[:firebase_core] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+110-->[:firebase_core] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[:firebase_core] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+113                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+113-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+116                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+116-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6c90caf72cce150f96134ab6dadca8e5/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:20:13-22:85
+119                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+119-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6c90caf72cce150f96134ab6dadca8e5/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:21:17-111
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-firestore:23.0.3] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6c90caf72cce150f96134ab6dadca8e5/jetified-firebase-firestore-23.0.3/AndroidManifest.xml:22:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-database:20.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1e932cfdea4eb4f687e4f8737b7036c9/firebase-database-20.0.1/AndroidManifest.xml:32:13-34:85
+122                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+122-->[com.google.firebase:firebase-database:20.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1e932cfdea4eb4f687e4f8737b7036c9/firebase-database-20.0.1/AndroidManifest.xml:33:17-109
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-database:20.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/1e932cfdea4eb4f687e4f8737b7036c9/firebase-database-20.0.1/AndroidManifest.xml:34:17-82
+124            <meta-data
+124-->[com.google.android.gms:play-services-measurement-api:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/16c349bf0c3520e8ae0d71cbcc96d218/play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+125                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+125-->[com.google.android.gms:play-services-measurement-api:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/16c349bf0c3520e8ae0d71cbcc96d218/play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.android.gms:play-services-measurement-api:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/16c349bf0c3520e8ae0d71cbcc96d218/play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/10ab5762b962a474d43a765c501e401e/firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+128                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+128-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/10ab5762b962a474d43a765c501e401e/firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-datatransport:18.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/10ab5762b962a474d43a765c501e401e/firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/54e5fe76aca72f40a28781d05831200c/firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+131                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+131-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/54e5fe76aca72f40a28781d05831200c/firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-installations:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/54e5fe76aca72f40a28781d05831200c/firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+133        </service>
+134
+135        <meta-data
+135-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:36
+136            android:name="com.google.android.gms.wallet.api.enabled"
+136-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-69
+137            android:value="true" />
+137-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-33
+138
+139        <activity
+139-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-20:75
+140            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+140-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-67
+141            android:exported="false"
+141-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+142            android:launchMode="singleTask"
+142-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-44
+143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+143-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-72
+144        <activity
+144-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-34:20
+145            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+145-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-67
+146            android:exported="true"
+146-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-36
+147            android:launchMode="singleTask"
+147-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-44
+148            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+148-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-83
+149            <intent-filter>
+149-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-33:29
+150                <action android:name="android.intent.action.VIEW" />
+150-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+150-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+151
+152                <category android:name="android.intent.category.DEFAULT" />
+152-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+152-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+153                <category android:name="android.intent.category.BROWSABLE" />
+153-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+153-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+154
+155                <data android:scheme="example" />
+155-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+155-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+156            </intent-filter>
+157        </activity>
+158        <activity
+158-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:17:9-19:57
+159            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+159-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:18:13-76
+160            android:theme="@style/StripeDefaultTheme" />
+160-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:19:13-54
+161        <activity
+161-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:20:9-22:57
+162            android:name="com.stripe.android.view.PaymentMethodsActivity"
+162-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:21:13-74
+163            android:theme="@style/StripeDefaultTheme" />
+163-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:22:13-54
+164        <activity
+164-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:23:9-25:57
+165            android:name="com.stripe.android.view.PaymentFlowActivity"
+165-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:24:13-71
+166            android:theme="@style/StripeDefaultTheme" />
+166-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:25:13-54
+167        <activity
+167-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:26:9-29:58
+168            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+168-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:27:13-78
+169            android:theme="@style/StripeDefaultTheme"
+169-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:28:13-54
+170            android:windowSoftInputMode="adjustResize" />
+170-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:29:13-55
+171        <activity
+171-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:30:9-32:61
+172            android:name="com.stripe.android.view.PaymentRelayActivity"
+172-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:31:13-72
+173            android:theme="@style/StripeTransparentTheme" />
+173-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:32:13-58
+174        <!--
+175        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+176        launched the browser Activity will also handle the return URL deep link.
+177        -->
+178        <activity
+178-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:38:9-54:20
+179            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+179-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:39:13-85
+180            android:launchMode="singleTop"
+180-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:40:13-43
+181            android:theme="@style/StripeTransparentTheme" >
+181-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:41:13-58
+182            <intent-filter>
+182-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:42:13-53:29
+183                <action android:name="android.intent.action.VIEW" />
+183-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+183-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+184
+185                <category android:name="android.intent.category.DEFAULT" />
+185-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+185-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+186                <category android:name="android.intent.category.BROWSABLE" />
+186-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+186-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+187
+188                <!-- Must match `DefaultReturnUrl#value`. -->
+189                <data
+189-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+190                    android:host="payment_return_url"
+191                    android:path="/com.example.baratonsupermarket_app"
+192                    android:scheme="stripesdk" />
+192-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+193            </intent-filter>
+194        </activity>
+195        <activity
+195-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:55:9-57:57
+196            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+196-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:56:13-80
+197            android:theme="@style/StripeDefaultTheme" />
+197-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:57:13-54
+198        <activity
+198-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:58:9-60:69
+199            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+199-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:59:13-80
+200            android:theme="@style/StripePaymentSheetDefaultTheme" />
+200-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:60:13-66
+201        <activity
+201-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:61:9-63:69
+202            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+202-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:62:13-82
+203            android:theme="@style/StripePaymentSheetDefaultTheme" />
+203-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:63:13-66
+204        <activity
+204-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:64:9-66:66
+205            android:name="com.stripe.android.googlepay.StripeGooglePayActivity"
+205-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:65:13-80
+206            android:theme="@style/StripeGooglePayDefaultTheme" />
+206-->[com.stripe:payments-core:16.10.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/fd5cf7bddc776003d6b2a785c40bf92b/payments-core-16.10.0/AndroidManifest.xml:66:13-63
+207        <activity
+207-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:10:9-12:54
+208            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+208-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:11:13-81
+209            android:theme="@style/Stripe3DS2Theme" />
+209-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:12:13-51
+210        <activity
+210-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:13:9-15:54
+211            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+211-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:14:13-89
+212            android:theme="@style/Stripe3DS2Theme" />
+212-->[com.stripe:stripe-3ds2-android:5.3.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/bc70613452cc9f0d08b4bcbdfe5e852f/stripe-3ds2-android-5.3.1/AndroidManifest.xml:15:13-51
+213
+214        <provider
+214-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:25:9-33:20
+215            android:name="com.luck.picture.lib.PictureFileProvider"
+215-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:26:13-68
+216            android:authorities="com.example.baratonsupermarket_app.luckProvider"
+216-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:27:13-64
+217            android:exported="false"
+217-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:28:13-37
+218            android:grantUriPermissions="true" >
+218-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:29:13-47
+219            <meta-data
+219-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:30:13-32:54
+220                android:name="android.support.FILE_PROVIDER_PATHS"
+220-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:31:17-67
+221                android:resource="@xml/file_paths" />
+221-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:32:17-51
+222        </provider>
+223
+224        <activity
+224-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:35:9-37:77
+225            android:name="com.luck.picture.lib.PictureSelectorActivity"
+225-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:36:13-72
+226            android:configChanges="orientation|keyboardHidden|screenSize" />
+226-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:37:13-74
+227        <activity
+227-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:38:9-40:77
+228            android:name="com.luck.picture.lib.PictureSelectorWeChatStyleActivity"
+228-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:39:13-83
+229            android:configChanges="orientation|keyboardHidden|screenSize" />
+229-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:40:13-74
+230        <activity
+230-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:41:9-44:64
+231            android:name="com.luck.picture.lib.PictureSelectorCameraEmptyActivity"
+231-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:42:13-83
+232            android:configChanges="orientation|keyboardHidden|screenSize"
+232-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:43:13-74
+233            android:theme="@style/Picture.Theme.Translucent" />
+233-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:44:13-61
+234        <activity
+234-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:45:9-47:77
+235            android:name="com.luck.picture.lib.PictureCustomCameraActivity"
+235-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:46:13-76
+236            android:configChanges="orientation|keyboardHidden|screenSize" />
+236-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:47:13-74
+237        <activity
+237-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:48:9-50:77
+238            android:name="com.luck.picture.lib.PicturePreviewActivity"
+238-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:49:13-71
+239            android:configChanges="orientation|keyboardHidden|screenSize" />
+239-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:50:13-74
+240        <activity
+240-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:51:9-53:77
+241            android:name="com.luck.picture.lib.PictureSelectorPreviewWeChatStyleActivity"
+241-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:52:13-90
+242            android:configChanges="orientation|keyboardHidden|screenSize" />
+242-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:53:13-74
+243        <activity
+243-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:54:9-57:50
+244            android:name="com.luck.picture.lib.PictureVideoPlayActivity"
+244-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:55:13-73
+245            android:configChanges="orientation|keyboardHidden|screenSize"
+245-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:56:13-74
+246            android:screenOrientation="sensor" />
+246-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:57:13-47
+247        <activity
+247-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:58:9-60:77
+248            android:name="com.luck.picture.lib.PictureExternalPreviewActivity"
+248-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:59:13-79
+249            android:configChanges="orientation|keyboardHidden|screenSize" />
+249-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:60:13-74
+250        <activity
+250-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:61:9-63:77
+251            android:name="com.luck.picture.lib.PicturePlayAudioActivity"
+251-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:62:13-73
+252            android:configChanges="orientation|keyboardHidden|screenSize" />
+252-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:63:13-74
+253        <activity
+253-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:64:9-66:61
+254            android:name="com.yalantis.ucrop.UCropActivity"
+254-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:65:13-60
+255            android:theme="@style/Base.Theme.NoActionBar" />
+255-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:66:13-58
+256        <activity
+256-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:67:9-69:61
+257            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+257-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:68:13-74
+258            android:theme="@style/Base.Theme.NoActionBar" />
+258-->[com.github.LuckSiege.PictureSelector:picture_library:v2.6.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/AndroidManifest.xml:69:13-58
+259
+260        <receiver
+260-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+261            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+261-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+262            android:exported="true"
+262-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+263            android:permission="com.google.android.c2dm.permission.SEND" >
+263-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+264            <intent-filter>
+264-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:32:13-34:29
+265                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+265-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:33:17-81
+265-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:33:25-78
+266            </intent-filter>
+267        </receiver>
+268        <!--
+269             FirebaseMessagingService performs security checks at runtime,
+270             but set to not exported to explicitly avoid allowing another app to call it.
+271        -->
+272        <service
+272-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+273            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+273-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+274            android:directBootAware="true"
+274-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+275            android:exported="false" >
+275-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+276            <intent-filter android:priority="-500" >
+276-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:45:13-47:29
+276-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:45:28-51
+277                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+277-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:46:17-78
+277-->[com.google.firebase:firebase-messaging:22.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/39492f1b9125f0942eb87f20dbd65eb6/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:46:25-75
+278            </intent-filter>
+279        </service>
+280
+281        <activity
+281-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+282            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+282-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+283            android:excludeFromRecents="true"
+283-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+284            android:exported="true"
+284-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+285            android:launchMode="singleTask"
+285-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+286            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+286-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+287            <intent-filter>
+287-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+288                <action android:name="android.intent.action.VIEW" />
+288-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+288-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+289
+290                <category android:name="android.intent.category.DEFAULT" />
+290-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+290-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+291                <category android:name="android.intent.category.BROWSABLE" />
+291-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+291-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+292
+293                <data
+293-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+294                    android:host="firebase.auth"
+295                    android:path="/"
+296                    android:scheme="genericidp" />
+296-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+297            </intent-filter>
+298        </activity>
+299        <activity
+299-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+300            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+300-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+301            android:excludeFromRecents="true"
+301-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+302            android:exported="true"
+302-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+303            android:launchMode="singleTask"
+303-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+304            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+304-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+305            <intent-filter>
+305-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+306                <action android:name="android.intent.action.VIEW" />
+306-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-69
+306-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:27:25-66
+307
+308                <category android:name="android.intent.category.DEFAULT" />
+308-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+308-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+309                <category android:name="android.intent.category.BROWSABLE" />
+309-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:17-78
+309-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:30:27-75
+310
+311                <data
+311-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-50
+312                    android:host="firebase.auth"
+313                    android:path="/"
+314                    android:scheme="recaptcha" />
+314-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:32:23-47
+315            </intent-filter>
+316        </activity>
+317
+318        <service
+318-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+319            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+319-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+320            android:enabled="true"
+320-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+321            android:exported="false" >
+321-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+322            <intent-filter>
+322-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+323                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+323-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+323-->[com.google.firebase:firebase-auth:21.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/259bf0a3e6305879c5d1e185b66535c6/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+324
+325                <category android:name="android.intent.category.DEFAULT" />
+325-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-76
+325-->[:stripe_payment] /home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/stripe_payment/intermediates/library_manifest/debug/AndroidManifest.xml:29:27-73
+326            </intent-filter>
+327        </service>
+328
+329        <provider
+329-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+330            android:name="com.google.firebase.provider.FirebaseInitProvider"
+330-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+331            android:authorities="com.example.baratonsupermarket_app.firebaseinitprovider"
+331-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+332            android:directBootAware="true"
+332-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+333            android:exported="false"
+333-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+334            android:initOrder="100" />
+334-->[com.google.firebase:firebase-common:20.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/a495e2ec2ef37c1ac9307b0230772e33/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+335
+336        <receiver
+336-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+337            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+337-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+338            android:enabled="true"
+338-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+339            android:exported="false" >
+339-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+340        </receiver>
+341
+342        <service
+342-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+343            android:name="com.google.android.gms.measurement.AppMeasurementService"
+343-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+344            android:enabled="true"
+344-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+345            android:exported="false" />
+345-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+346        <service
+346-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+347            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+347-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+348            android:enabled="true"
+348-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+349            android:exported="false"
+349-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+350            android:permission="android.permission.BIND_JOB_SERVICE" />
+350-->[com.google.android.gms:play-services-measurement:19.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/390ce8fac4fac0359eb4d1b7c2207418/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+351
+352        <activity
+352-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+353            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+353-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+354            android:excludeFromRecents="true"
+354-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+355            android:exported="false"
+355-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+356            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+356-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+357        <!--
+358            Service handling Google Sign-In user revocation. For apps that do not integrate with
+359            Google Sign-In, this service will never be started.
+360        -->
+361        <service
+361-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+362            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+362-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+363            android:exported="true"
+363-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+364            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+364-->[com.google.android.gms:play-services-auth:16.0.1] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+365        <uses-library
+365-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+366            android:name="org.apache.http.legacy"
+366-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+367            android:required="false" />
+367-->[com.google.android.gms:play-services-maps:17.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/6704fee892a1d3f337cffc2d9db0dfd7/play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+368
+369        <activity
+369-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3fe1b63fa2808d319df348dc4e9ecc79/play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+370            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+370-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3fe1b63fa2808d319df348dc4e9ecc79/play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+371            android:exported="false"
+371-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3fe1b63fa2808d319df348dc4e9ecc79/play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+372            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+372-->[com.google.android.gms:play-services-base:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3fe1b63fa2808d319df348dc4e9ecc79/play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+373
+374        <meta-data
+374-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/55533f25accde0b0b2770ca171244bf2/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+375            android:name="com.google.android.gms.version"
+375-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/55533f25accde0b0b2770ca171244bf2/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+376            android:value="@integer/google_play_services_version" />
+376-->[com.google.android.gms:play-services-basement:17.5.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/55533f25accde0b0b2770ca171244bf2/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+377
+378        <service
+378-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+379            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+379-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+380            android:exported="false" >
+380-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+381            <meta-data
+381-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+382                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+382-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+383                android:value="cct" />
+383-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/3ede58bca1ebeec49e6788087a9cb620/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+384        </service>
+385        <service
+385-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+386            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+386-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+387            android:exported="false"
+387-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+388            android:permission="android.permission.BIND_JOB_SERVICE" >
+388-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+389        </service>
+390
+391        <receiver
+391-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+392            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+392-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+393            android:exported="false" />
+393-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/reptilefury/.gradle/caches/transforms-2/files-2.1/eedcc2ff8acab8499ef29a372ae96e6b/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+394    </application>
+395
+396</manifest>

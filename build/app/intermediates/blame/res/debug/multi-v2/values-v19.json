@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/db851877318b47b215c1f9388355090a/picture_library-v2.6.1/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "343"
+                    }
+                }
+            ]
+        }
+    ]
+}
