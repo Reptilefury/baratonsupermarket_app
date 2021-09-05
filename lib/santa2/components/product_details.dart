@@ -29,7 +29,7 @@ class _ProductDetailsState extends State<ProductDetails> {
           backgroundColor: Colors.white70,
           centerTitle: false,
           title: InkWell(
-              onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>new HomePage()));},
+              onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>new HomePage2()));},
               child: Text('Baraton Shop', style: TextStyle(color: Colors.deepPurple),)),
           actions: <Widget>[
             new IconButton(

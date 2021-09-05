@@ -52,7 +52,7 @@ class _LoginState extends State<Login> {
     isLogedin = await googleSignIn.isSignedIn();
     if (isLogedin) {
       Navigator.pushReplacement(
-          this.context, MaterialPageRoute(builder: (context) => HomePage()));
+          this.context, MaterialPageRoute(builder: (context) => HomePage2()));
     }
     setState(() {
       loading = false;
@@ -100,7 +100,7 @@ class _LoginState extends State<Login> {
         loading = false;
       });
       Navigator.pushReplacement(
-          this.context, MaterialPageRoute(builder: (context) => HomePage()));
+          this.context, MaterialPageRoute(builder: (context) => HomePage2()));
       //Navigator.push(this.context, MaterialPageRoute(builder: (context)=> HomePage()));
     } else {
       Fluttertoast.showToast(msg: "Login Failed");

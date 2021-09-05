@@ -131,7 +131,7 @@ class HomePage extends StatelessWidget {
               ),
               ListTile(
                 onTap: () {
-                  //  userController.signOut();
+                    userController.signOut();
                 },
                 leading: Icon(
                   Icons.exit_to_app,

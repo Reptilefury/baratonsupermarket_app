@@ -25,18 +25,21 @@ class PdtItem extends StatelessWidget {
           footer: ClipRect(
 
             //USEDD CLIPRECT
-            child: GridTileBar(
-              title: Text(name),
-              trailing: IconButton(
-                  icon: Icon(Icons.shopping_cart),
-                  onPressed: () {
-                    Scaffold.of(context).showSnackBar(SnackBar(
-                      duration: Duration(seconds: 3),
-                      content: Text('Item Added to Cart'),
-                    ));
-                    cart.addItem(pdt.id, pdt.name, pdt.price);
-                  }),
-              backgroundColor: Colors.black87,
+            child: Container(
+              height: 30,
+              child: GridTileBar(
+                title: Text(name, style: TextStyle(color: Colors.black),),
+                trailing: IconButton(
+                    icon: Icon( Icons.add_shopping_cart, color: Colors.indigo),
+                    onPressed: () {
+                      Scaffold.of(context).showSnackBar(SnackBar(
+                        duration: Duration(seconds: 3),
+                        content: Text('Item Added to Cart'),
+                      ));
+                      cart.addItem(pdt.id, pdt.name, pdt.price);
+                    }),
+                backgroundColor: Colors.white,
+              ),
             ),
           ),
         ),

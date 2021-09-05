@@ -19,12 +19,12 @@ import 'package:provider/provider.dart';
 import 'login.dart';
 
 //import 'components/products.dart';
-class HomePage extends StatefulWidget {
+class HomePage2 extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePage2State createState() => _HomePage2State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage2State extends State<HomePage2> {
  // ProductServices _productServices = ProductServices();
   final _key = GlobalKey<ScaffoldState>();
 

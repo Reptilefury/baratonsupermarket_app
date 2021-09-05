@@ -534,7 +534,7 @@ class _SignupState extends State<Signup> {
                 })
             .catchError((err) => {print(err.toString())});
         Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+            context, MaterialPageRoute(builder: (context) => HomePage2()));
       }
     }
   }

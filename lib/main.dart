@@ -3,8 +3,10 @@ import 'package:flutter_ecom/Controllers/appController.dart';
 import 'package:flutter_ecom/constants/firebase.dart';
 import 'package:flutter_ecom/models/orders.dart';
 import 'package:flutter_ecom/models/products.dart';
+import 'package:flutter_ecom/screens/authentication/auth.dart';
 import 'package:flutter_ecom/screens/pdt_detail_screen.dart';
 import 'package:flutter_ecom/splash/splash.dart';
+import 'package:flutter_ecom/widgets/home_body.dart';
 import 'package:get/get.dart';
 import './screens/homepage.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +51,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter E-commerce App',
         theme: ThemeData(primaryColor: Colors.indigo, accentColor: Colors.white),
-        home: SplashScreen(),
+        home:  SplashScreen(),
+        //HomePage(),
+        // AuthenticationScreen(),
+        //TestScreen(),
         //HomePage(),
         routes: {
           DetailPage.routeName: (ctx) => DetailPage(),
