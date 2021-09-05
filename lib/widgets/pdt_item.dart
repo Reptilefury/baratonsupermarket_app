@@ -10,7 +10,6 @@ class PdtItem extends StatelessWidget {
   final String imageUrl;
 
   PdtItem({this.name, this.imageUrl});
-
   @override
   Widget build(BuildContext context) {
     final pdt = Provider.of<Product>(context);
@@ -29,16 +28,10 @@ class PdtItem extends StatelessWidget {
             trailing: IconButton(
                 icon: Icon(Icons.shopping_cart),
                 onPressed: () {
-                Get.snackbar(
-                      "Item added", "${pdt.name} was added to your cart");
-                  /*showSnackBar(
-
-                      SnackBar(
+                  Scaffold.of(context).showSnackBar(SnackBar(
                     duration: Duration(seconds: 3),
                     content: Text('Item Added to Cart'),
-                  )
-
-                  ); */
+                  ));
                   cart.addItem(pdt.id, pdt.name, pdt.price);
                 }),
             backgroundColor: Colors.black87,

@@ -4,7 +4,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/shared_preferences/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values/values.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,83,84,88,89,90,91,98,141,173,210",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -20,7 +20,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/shared_preferences/intermediates/res/merged/debug/values/values.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values/values.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,83,84,88,89,90,91,98,141,173,210",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

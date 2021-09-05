@@ -1,14 +1,14 @@
 [
     {
         "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
-        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee0869ddf1d36acfb724dd565c136ef6/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
-        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee0869ddf1d36acfb724dd565c136ef6/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
-        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/95440522e833d704a0382df1f8998f68/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+        "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ee0869ddf1d36acfb724dd565c136ef6/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     }
 ]

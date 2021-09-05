@@ -4,7 +4,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/c3944a260b153ef3d8e1f1c26d87884b/play-services-wallet-18.1.3/res/values-en-rSG/values.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/b3fb3683736e97be48877997f9f60393/play-services-wallet-18.1.3/res/values-en-rSG/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

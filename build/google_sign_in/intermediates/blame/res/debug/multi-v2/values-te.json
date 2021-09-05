@@ -4,24 +4,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/4f5c8436c852487e14a87a30aa4ae582/jetified-play-services-basement-16.0.1/res/values-te/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1239",
-                        "endColumns": "198",
-                        "endOffsets": "1433"
-                    }
-                },
-                {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/values-te/values.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/0fd8e161ae055e5169140fd53c25abeb/jetified-play-services-base-16.0.1/res/values-te/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values-te/values-te.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/1526ab6cd123d44ea87056b9d76fe7bc/jetified-play-services-basement-16.0.1/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1239",
+                        "endColumns": "198",
+                        "endOffsets": "1433"
+                    }
+                },
+                {
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -60,24 +60,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/google_sign_in/intermediates/res/merged/debug/values-te/values-te.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/4f5c8436c852487e14a87a30aa4ae582/jetified-play-services-basement-16.0.1/res/values-te/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "198",
-                        "endOffsets": "445"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1239",
-                        "endColumns": "198",
-                        "endOffsets": "1433"
-                    }
-                },
-                {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/ae1dd4c794c2d08110dc835bd3f6e223/jetified-play-services-base-16.0.1/res/values-te/values.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/0fd8e161ae055e5169140fd53c25abeb/jetified-play-services-base-16.0.1/res/values-te/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -94,7 +77,24 @@
                     }
                 },
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values-te/values-te.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/1526ab6cd123d44ea87056b9d76fe7bc/jetified-play-services-basement-16.0.1/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1239",
+                        "endColumns": "198",
+                        "endOffsets": "1433"
+                    }
+                },
+                {
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

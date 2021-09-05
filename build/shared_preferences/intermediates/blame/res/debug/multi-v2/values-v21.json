@@ -4,7 +4,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/shared_preferences/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values-v21/values-v21.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -20,7 +20,7 @@
             "outputFile": "/home/reptilefury/Downloads/Compressed/flutter-ecommerce-app-master/build/shared_preferences/intermediates/res/merged/debug/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/cc678b9f7f456c4212d9f7b4eefcd121/core-1.1.0/res/values-v21/values-v21.xml",
+                    "source": "/home/reptilefury/.gradle/caches/transforms-2/files-2.1/88b2b60d2d2d18319f949a213de9b702/core-1.1.0/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
