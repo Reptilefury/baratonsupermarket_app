@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecom/screens/pdt_detail_screen.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:provider/provider.dart';
 import '../models/products.dart';
 import '../models/cart.dart';
@@ -23,18 +22,22 @@ class PdtItem extends StatelessWidget {
         padding: const EdgeInsets.all(15.0),
         child: GridTile(
           child: Image.network(imageUrl),
-          footer: GridTileBar(
-            title: Text(name),
-            trailing: IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () {
-                  Scaffold.of(context).showSnackBar(SnackBar(
-                    duration: Duration(seconds: 3),
-                    content: Text('Item Added to Cart'),
-                  ));
-                  cart.addItem(pdt.id, pdt.name, pdt.price);
-                }),
-            backgroundColor: Colors.black87,
+          footer: ClipRect(
+
+            //USEDD CLIPRECT
+            child: GridTileBar(
+              title: Text(name),
+              trailing: IconButton(
+                  icon: Icon(Icons.shopping_cart),
+                  onPressed: () {
+                    Scaffold.of(context).showSnackBar(SnackBar(
+                      duration: Duration(seconds: 3),
+                      content: Text('Item Added to Cart'),
+                    ));
+                    cart.addItem(pdt.id, pdt.name, pdt.price);
+                  }),
+              backgroundColor: Colors.black87,
+            ),
           ),
         ),
       ),

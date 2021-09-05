@@ -5,6 +5,7 @@ import 'package:flutter_ecom/constants/firebase.dart';
 import 'package:flutter_ecom/models/user.dart';
 import 'package:flutter_ecom/santa2/pages/home.dart';
 import 'package:flutter_ecom/screens/authentication/auth.dart';
+import 'package:flutter_ecom/widgets/home_body.dart';
 import 'package:get/get.dart';
 import 'package:flutter_ecom/utils/helpers/showLoading.dart';
 
@@ -32,7 +33,9 @@ class UserController extends GetxController {
       Get.offAll(() => AuthenticationScreen());
     } else {
       userModel.bindStream(listenToUser());
-      Get.offAll(() => HomePage());
+      Get.offAll(() => HomeBody()
+      //    HomePage()
+      );
     }
   }
 

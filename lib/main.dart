@@ -1,13 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecom/Controllers/appController.dart';
+import 'package:flutter_ecom/constants/firebase.dart';
 import 'package:flutter_ecom/models/orders.dart';
 import 'package:flutter_ecom/models/products.dart';
 import 'package:flutter_ecom/screens/pdt_detail_screen.dart';
+import 'package:flutter_ecom/splash/splash.dart';
+import 'package:get/get.dart';
 import './screens/homepage.dart';
 import 'package:provider/provider.dart';
 import './models/cart.dart';
 import './screens/cart_screen.dart';
+import 'Controllers/authController.dart';
 
-void main() {
+/*void main() {
+  runApp(MyApp());
+}*/
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initialization.then((value){
+    Get.put(AppController());
+    Get.put(UserController());
+   // Get.put(ProductsController());
+ //   Get.put(CartController());
+  //  Get.put(PaymentsController());
+  });
   runApp(MyApp());
 }
 
@@ -29,16 +45,19 @@ class MyApp extends StatelessWidget {
           value: Orders(),
         )
       ],
-      child: MaterialApp(
+      child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter E-commerce App',
         theme: ThemeData(primaryColor: Colors.indigo, accentColor: Colors.white),
-        home: HomePage(),
+        home: SplashScreen(),
+        //HomePage(),
         routes: {
           DetailPage.routeName: (ctx) => DetailPage(),
           CartScreen.routeName: (ctx) => CartScreen(),
         },
       ),
+
     );
+
   }
 }
