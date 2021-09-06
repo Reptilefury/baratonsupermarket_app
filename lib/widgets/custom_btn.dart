@@ -32,8 +32,10 @@ class CustomButton extends StatelessWidget {
               color: bgColor ?? Colors.indigo
             ),
             child: Container(
+              //height: 100,
+              width: 350,
               margin: EdgeInsets.all(14),
-              alignment: Alignment.center,
+              alignment: Alignment.bottomCenter,
               child: CustomText(
                 text: text,
                 color: txtColor ?? Colors.white,

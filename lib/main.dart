@@ -6,6 +6,7 @@ import 'package:flutter_ecom/models/products.dart';
 import 'package:flutter_ecom/screens/authentication/auth.dart';
 import 'package:flutter_ecom/screens/pdt_detail_screen.dart';
 import 'package:flutter_ecom/splash/splash.dart';
+import 'package:flutter_ecom/testscreen.dart';
 import 'package:flutter_ecom/widgets/home_body.dart';
 import 'package:get/get.dart';
 import './screens/homepage.dart';
@@ -59,6 +60,8 @@ class MyApp extends StatelessWidget {
         routes: {
           DetailPage.routeName: (ctx) => DetailPage(),
           CartScreen.routeName: (ctx) => CartScreen(),
+          testScreen.routeName: (ctx) => testScreen(),
+
         },
       ),
 

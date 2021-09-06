@@ -28,7 +28,7 @@ class PdtItem extends StatelessWidget {
             child: Container(
               height: 30,
               child: GridTileBar(
-                title: Text(name, style: TextStyle(color: Colors.black),),
+                title: Text(name, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
                 trailing: IconButton(
                     icon: Icon( Icons.add_shopping_cart, color: Colors.indigo),
                     onPressed: () {

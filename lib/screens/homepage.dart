@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                   text: "Home Page",
                 ),
                 onTap: () {
-                  //  Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> HomePage()));
                 },
               ),
               ListTile(

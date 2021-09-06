@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecom/screens/cart_screen.dart';
+import 'package:flutter_ecom/widgets/all_pdts.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import '../models/products.dart';
 import 'package:provider/provider.dart';
@@ -346,18 +347,25 @@ class _DetailPageState extends State<DetailPage> {
             ),
           ),
           //SIMILAR PRODUCTS SECTION
-         /* Container(
+         Container(
               height: 360,
               child:
+              AllProducts()
               //Similar_products()
               // REMEMBER TO LOAD MORE PRODUCTS
           ),
-            */
+
         ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+          showBarModalBottomSheet(
+            context: context,
+            builder: (context) => Container(
+              color: Colors.white,
+              child: CartScreen(),
+            ),
+          );
         },
         child: Icon(
           Icons.shopping_cart,color: Colors.indigo,
