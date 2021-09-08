@@ -20,6 +20,8 @@ import 'Controllers/authController.dart';
 }*/
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  MpesaFlutterPlugin.setConsumerKey("MYt8fucUMX7rnFWSOP1HMASssTOAOhl3");
+  MpesaFlutterPlugin.setConsumerSecret("CuOGhPlpQYEpZOQD");
   await initialization.then((value){
     Get.put(AppController());
     Get.put(UserController());

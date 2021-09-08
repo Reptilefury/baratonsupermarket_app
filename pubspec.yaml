@@ -58,6 +58,7 @@ dependencies:
   stripe_payment: ^1.1.0
   uuid: ^3.0.4
   timeago: ^3.0.2
+  mpesa_flutter_plugin: ^1.0.0
 
     #js: ^0.6.2
     #web_socket_channel: ^1.1.0
