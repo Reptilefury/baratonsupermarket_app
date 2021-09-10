@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecom/screens/cart_screen.dart';
 import 'package:flutter_ecom/widgets/all_pdts.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:mpesa_flutter_plugin/initializer.dart';
+import 'package:mpesa_flutter_plugin/mpesa_flutter_plugin.dart';
 import '../models/products.dart';
 import 'package:provider/provider.dart';
 import '../models/cart.dart';
@@ -17,6 +19,7 @@ import '../models/cart.dart';
 
 class DetailPage extends StatefulWidget {
   static const routeName = '/product-detail';
+
   const DetailPage({Key key}) : super(key: key);
 
   @override
@@ -24,18 +27,46 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
+
+
+
   @override
   Widget build(BuildContext context) {
     final pdt = Provider.of<Product>(context);
     final cart = Provider.of<Cart>(context);
 
 
-    final productId = ModalRoute.of(context).settings.arguments as String;
+    final productId = ModalRoute
+        .of(context)
+        .settings
+        .arguments as String;
     final loadedPdt = Provider.of<Products>(context).findById(productId);
+    Future LipaNaMpesa() async {
+      dynamic transactionInitialisation;
+      try {
+        transactionInitialisation =
+        await MpesaFlutterPlugin.initializeMpesaSTKPush(
+            businessShortCode: "174379",
+            transactionType: TransactionType.CustomerPayBillOnline,
+            amount: loadedPdt.price ,
+            partyA: "254740870184",
+            partyB: "174379",
+            callBackURL: Uri(scheme: "https", host: "mpesa-requestbin.herokuapp.com", path:"/1hhy6391" ),
+            accountReference: "Baraton  Supermarket App",
+            phoneNumber: "254740870184",
+            baseUri: Uri(scheme: "https", host: "sandbox.safaricom.co.ke" ),
+            transactionDesc: "would you like to purchase ${loadedPdt.name}",
+            passKey: "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919");
+        print("TRANSACTION RESULT:" +transactionInitialisation.toString());
+      } catch(e){
+        print("CAUGHT EXCEPTION:" + e.toString());
+      }
+    }
     //final cart = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(loadedPdt.name, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:20),),
+        title: Text(loadedPdt.name, style: TextStyle(
+            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
         actions: <Widget>[
           IconButton(
               icon: Icon(
@@ -45,10 +76,11 @@ class _DetailPageState extends State<DetailPage> {
               onPressed: () {
                 showBarModalBottomSheet(
                   context: context,
-                  builder: (context) => Container(
-                    color: Colors.white,
-                    child: CartScreen(),
-                  ),
+                  builder: (context) =>
+                      Container(
+                        color: Colors.white,
+                        child: CartScreen(),
+                      ),
                 );
               })
           //=>Navigator.of(context).pushNamed(CartScreen.routeName))
@@ -56,7 +88,7 @@ class _DetailPageState extends State<DetailPage> {
 
 
       ),
-    /*  appBar: new AppBar(
+      /*  appBar: new AppBar(
           elevation: 0.1,
           backgroundColor: Colors.white70,
           centerTitle: false,
@@ -105,7 +137,7 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                       title: new Row(
                         children: <Widget>[
-                     /*     Expanded(
+                          /*     Expanded(
                               child: new Text(
                                 "\KSh ${widget.product_detail_old_price}",
                                 style: TextStyle(
@@ -245,12 +277,13 @@ class _DetailPageState extends State<DetailPage> {
               Expanded(
                 child: Container(
                   margin: EdgeInsets.only(left: 10.0, right: 10, top: 8.0),
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10)),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Expanded(
                       child: MaterialButton(
-                        onPressed: () {},
+                        onPressed: () {LipaNaMpesa();},
                         color: Colors.indigo,
                         textColor: Colors.white,
                         elevation: 0.2,
@@ -265,11 +298,10 @@ class _DetailPageState extends State<DetailPage> {
                     Icons.add_shopping_cart,
                     color: Colors.indigo,
                   ),
-                    onPressed: () {
-
-                      cart.addItem(productId, loadedPdt.name, loadedPdt.price);
-                    }
-                  ),
+                  onPressed: () {
+                    cart.addItem(productId, loadedPdt.name, loadedPdt.price);
+                  }
+              ),
               new IconButton(
                   icon: Icon(Icons.favorite_border),
                   color: Colors.indigo,
@@ -290,7 +322,7 @@ class _DetailPageState extends State<DetailPage> {
             ),
             subtitle: new Text(
                 "${loadedPdt.description}"
-               // "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+              // "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
             ),),
           Divider(),
           new Row(
@@ -347,12 +379,12 @@ class _DetailPageState extends State<DetailPage> {
             ),
           ),
           //SIMILAR PRODUCTS SECTION
-         Container(
+          Container(
               height: 360,
               child:
               AllProducts()
-              //Similar_products()
-              // REMEMBER TO LOAD MORE PRODUCTS
+            //Similar_products()
+            // REMEMBER TO LOAD MORE PRODUCTS
           ),
 
         ],
@@ -361,14 +393,15 @@ class _DetailPageState extends State<DetailPage> {
         onPressed: () {
           showBarModalBottomSheet(
             context: context,
-            builder: (context) => Container(
-              color: Colors.white,
-              child: CartScreen(),
-            ),
+            builder: (context) =>
+                Container(
+                  color: Colors.white,
+                  child: CartScreen(),
+                ),
           );
         },
         child: Icon(
-          Icons.shopping_cart,color: Colors.indigo,
+          Icons.shopping_cart, color: Colors.indigo,
           size: 30,
         ),
       ),
@@ -376,18 +409,6 @@ class _DetailPageState extends State<DetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*import 'package:flutter/material.dart';

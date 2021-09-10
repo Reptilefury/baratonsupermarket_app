@@ -24,7 +24,7 @@ class Products with ChangeNotifier {
       name: 'A4',
       imgUrl:
           'https://firebasestorage.googleapis.com/v0/b/baratonshop.appspot.com/o/A4books.png?alt=media&token=589965ad-900a-441c-bcd8-0c034a10a2ed',
-      price: 50,
+      price: 10,
       category: 'Books',
       description:
           'Baraton\'s A4 Paper format: A4 Booklet Dimensions in milimeters: 210 x 297 mm Dimensions in Centimeters: 21 x 29.7 cm Dimensions in Inches: 8.27 x 11.69 pouces',

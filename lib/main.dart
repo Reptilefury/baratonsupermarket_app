@@ -9,6 +9,7 @@ import 'package:flutter_ecom/splash/splash.dart';
 import 'package:flutter_ecom/testscreen.dart';
 import 'package:flutter_ecom/widgets/home_body.dart';
 import 'package:get/get.dart';
+import 'package:mpesa_flutter_plugin/mpesa_flutter_plugin.dart';
 import './screens/homepage.dart';
 import 'package:provider/provider.dart';
 import './models/cart.dart';
