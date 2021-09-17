@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecom/screens/cart_screen.dart';
+import 'package:flutter_ecom/utils/helpers/showLoading.dart';
 import 'package:flutter_ecom/widgets/all_pdts.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:mpesa_flutter_plugin/initializer.dart';
@@ -283,7 +284,9 @@ class _DetailPageState extends State<DetailPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Expanded(
                       child: MaterialButton(
-                        onPressed: () {LipaNaMpesa();},
+                        onPressed: () {
+                          showLoading();
+                          LipaNaMpesa();},
                         color: Colors.indigo,
                         textColor: Colors.white,
                         elevation: 0.2,
