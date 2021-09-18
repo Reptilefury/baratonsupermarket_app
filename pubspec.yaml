@@ -59,6 +59,8 @@ dependencies:
   uuid: ^3.0.4
   timeago: ^3.0.2
   mpesa_flutter_plugin: ^1.0.0
+  progress_dialog: ^1.2.0
+  lottie: ^1.0.0
 
 
     #js: ^0.6.2
